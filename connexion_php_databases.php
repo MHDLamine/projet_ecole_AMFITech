@@ -1,7 +1,7 @@
 <?php
-$serveur = "localhost:8090";
+$serveur = "localhost";
 $utilisateur = "root";
-$mpd = "";
+$mpd = "gahdamns";
 
 // Create connection
 $conn = new mysqli($serveur, $utilisateur, $mpd);
@@ -11,4 +11,4 @@ if ($conn->connect_error) {
   die("Connexion échouée: " . $conn->connect_error);
 }
 echo "BD Connecté";
-?>
+?> 

@@ -1,4 +1,4 @@
-<?php include './connexion_php_databases.php';?>
+<?php include '../connexion_php_databases.php';?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,26 +12,66 @@
     <title>Document</title>
 </head>
 <body>
-    
 <div class="container">
-<form>
-        <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-        </div>
-    <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">Password</label>
-            <input type="password" class="form-control" id="exampleInputPassword1">
+    <form method="post" action="inscription.php" class="row g-3">
+    <div class="col-md-6">
+        <label for="prenom" class="form-label">Prenom</label>
+        <input type="text" class="form-control" id="prenom" name="prenom">
     </div>
-    <div class="mb-3 form-check">
-            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-         <label class="form-check-label" for="exampleCheck1">Check me out</label>
+    <div class="col-md-6">
+        <label for="nom" class="form-label">Nom</label>
+        <input type="text" class="form-control" id="nom" name="nom">
     </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
-</form>
+    <div class="col-md-6">
+        <label for="inputEmail4" class="form-label">Email</label>
+        <input type="email" class="form-control" id="inputEmail4" name="email">
+    </div>
+    <div class="col-md-6">
+        <label for="inputPassword4" class="form-label">mot de passe</label>
+        <input type="password" class="form-control" id="inputPassword4" name="mdp">
+    </div>
+    <div class="col-6">
+        <label for="date_naissance" class="form-label">Date de naissance</label>
+        <input type="date" class="form-control" id="date_naissance" name="date_naissance" >
+    </div>
+    <div class="col-6">
+        <label for="lieu_naissance" class="form-label">Lieu de naissance</label>
+        <input type="text" class="form-control" id="lieu_naissance" name="lieu_naissance" >
+    </div>
 
+    <div class="col-md-6">
+        <label for="adresse" class="form-label">Adresse</label>
+        <input type="text" class="form-control" id="adresse" name="adresse">
     </div>
+    <div class="col-md-3">
+        <label for="inputState" class="form-label">Profil</label>
+        <select id="inputState" class="form-select" name="profil">
+        <option selected>...</option>
+        <option >enseignant</option>
+        <option>surveillant</option>
+        
+        </select>
+    </div>
+    <div class="col-md-3">
+        <label for="inputState" class="form-label">Matière enseignée</label>
+        <select id="inputState" class="form-select" name="matiere">
+        <option selected>...</option>
+        <option>français</option>
+        <option>Anglais</option>
+        <option>mathématique</option>
+        <option>physique-chimie</option>
+        <option>Histoire-Géographie</option>
+        <option>education physique</option>
+        <option>Arabe</option>
+        </select>
+    </div>
+    
+    <div class="col-12">
+        <button type="submit" class="btn btn-primary">Envoyer</button>
+    </div>
+    </form>
 
+</div>
     <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" 
 crossorigin="anonymous"></script>

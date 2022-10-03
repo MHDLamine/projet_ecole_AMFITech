@@ -1,21 +1,25 @@
 <?php include '../connexion_php_databases.php';?>
 
 <?php
-if (isset($_POST['submit'])) {
+
+
+if (isset($_POST['submit'])) { //isset permet de vérifier si la variable $_POST['submit'] existe
+$a = 23;
 $prenom = $_POST['prenom'];
-$nom = $_POST['nom'];
-$email = $_POST['email'];
+$nom = $_POST['nom'];       
+$email = $_POST['email'];   
 $mdp = $_POST['mdp'];
-$matricule = $_POST['matricule'];
+$matricule = date('Y', time()).'-'.$a.'-ER';
 $date_naissance = $_POST['date_naissance'];
 $lieu_naissance = $_POST['lieu_naissance'];
 $adresse = $_POST['adresse'];
 $profil = $_POST['profil'];
 $matiere = $_POST['matiere'];
 
-$select_matricule = $conn->prepare("SELECT matricule_Employes FROM `employes` WHERE matricule_Employes = ? ");
-$select_matricule->execute([$matricule]);
-if ($select_matricule->rowCount() > 0)
+
+$select_mail = $conn->prepare("SELECT adresse_mail_Employes FROM `employes` WHERE adresse_mail_Employes = ? ");
+$select_mail->execute([$email]);
+if ($select_mail->rowCount() > 0)
 {
     $message [] = "compte existante";
 }
@@ -27,7 +31,6 @@ else {
 }
 }
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -59,7 +62,7 @@ else {
     }
     ?>
 
-    <form method="post" action="" enctype="multipart/form-data" class="row g-3">
+    <form method="post" action=""  class="row g-3">
     <div class="col-md-6">
         <label for="prenom" class="form-label">Prenom</label>
         <input type="text" class="form-control" id="prenom" name="prenom" required>
@@ -78,7 +81,7 @@ else {
     </div>
     <div class="col-md-3">
         <label for="matricule" class="form-label">matricule</label>
-        <input type="text" class="form-control" id="matricule" name="matricule" required>
+        <input type="text" class="form-control" id="matricule" name="matricule">
     </div>
     <div class="col-6">
         <label for="date_naissance" class="form-label">Date de naissance</label>

@@ -1,24 +1,20 @@
-<?php include '../connexion_php_databases.php';?>
+<?php include '../connexion_php_databases.php';  ?>
 
 <?php
-
-
 if (isset($_POST['submit'])) { //isset permet de vérifier si la variable $_POST['submit'] existe
-$a = 23;
 $prenom = $_POST['prenom'];
 $nom = $_POST['nom'];       
-$email = $_POST['email'];   
+$email = $_POST['email']; 
 $mdp = $_POST['mdp'];
-$matricule = date('Y', time()).'-'.$a.'-ER';
 $date_naissance = $_POST['date_naissance'];
 $lieu_naissance = $_POST['lieu_naissance'];
-$adresse = $_POST['adresse'];
+/* $adresse = $_POST['adresse']; */
 $profil = $_POST['profil'];
 $matiere = $_POST['matiere'];
-
-
+$matricule = date('Y ', time()).$email.' -EDR';
 $select_mail = $conn->prepare("SELECT adresse_mail_Employes FROM `employes` WHERE adresse_mail_Employes = ? ");
 $select_mail->execute([$email]);
+
 if ($select_mail->rowCount() > 0)
 {
     $message [] = "compte existante";
@@ -26,9 +22,13 @@ if ($select_mail->rowCount() > 0)
 else {
     $insertion = $conn->prepare("INSERT INTO `employes` (matricule_Employes,prenom_Employes, nom_Employes, 
     date_naissance_Employes, lieu_naissance_Employes,adresse_mail_Employes, profil_Employes, matiere_enseigne_Employes,mot_de_passe) VALUES (?,?,?,?,?,?,?,?,?)");
-    $insertion->execute([$matricule, $prenom, $nom, $date_naissance, $lieu_naissance, $adresse, $profil, $matiere, $mdp ]);
+    $insertion->execute([$matricule, $prenom, $nom, $date_naissance, $lieu_naissance, $email, $profil, $matiere, $mdp ]);
     $message []  = "inscription reussi";
+ 
+  
+    
 }
+
 }
 ?>
 <!DOCTYPE html>
@@ -81,7 +81,7 @@ else {
     </div>
     <div class="col-md-3">
         <label for="matricule" class="form-label">matricule</label>
-        <input type="text" class="form-control" id="matricule" name="matricule">
+        <input type="text" class="form-control" id="matricule" name="matricule" value="<?php echo $matricule  ?>" readonly>
     </div>
     <div class="col-6">
         <label for="date_naissance" class="form-label">Date de naissance</label>
@@ -92,10 +92,10 @@ else {
         <input type="text" class="form-control" id="lieu_naissance" name="lieu_naissance" required>
     </div>
 
-    <div class="col-md-6">
+<!--     <div class="col-md-6">
         <label for="adresse" class="form-label">Adresse</label>
         <input type="text" class="form-control" id="adresse" name="adresse" required>
-    </div>
+    </div> -->
     <div class="col-md-3">
         <label for="inputState" class="form-label">Profil</label>
         <select id="inputState" class="form-select" name="profil" required>

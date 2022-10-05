@@ -1,0 +1,17 @@
+body{
+    background-color: rgb(214, 214, 214); 
+}
+.message, .message_{
+    width: 100%;
+    height: auto;
+    font-size:1.5rem;
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+}
+.message{
+    background-color: rgb(2, 75, 0);
+}
+.message_{
+    background-color: rgb(179, 27, 0);
+}

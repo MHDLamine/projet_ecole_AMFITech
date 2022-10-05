@@ -1,33 +1,40 @@
-<?php include '../connexion_php_databases.php';?>
+<?php include '../connexion_php_databases.php';  ?>
 
 <?php
-if (isset($_POST['submit'])) {
+if (isset($_POST['submit'])) { //isset permet de vérifier si la variable $_POST['submit'] existe
 $prenom = $_POST['prenom'];
-$nom = $_POST['nom'];
-$email = $_POST['email'];
+$nom = $_POST['nom'];       
+$email = $_POST['email']; 
 $mdp = $_POST['mdp'];
-$matricule = $_POST['matricule'];
 $date_naissance = $_POST['date_naissance'];
 $lieu_naissance = $_POST['lieu_naissance'];
-$adresse = $_POST['adresse'];
+/* $adresse = $_POST['adresse']; */
 $profil = $_POST['profil'];
 $matiere = $_POST['matiere'];
 
-$select_matricule = $conn->prepare("SELECT matricule_Employes FROM `employes` WHERE matricule_Employes = ? ");
-$select_matricule->execute([$matricule]);
-if ($select_matricule->rowCount() > 0)
+$select_mail = $conn->prepare("SELECT adresse_mail_Employes FROM `employes` WHERE adresse_mail_Employes = ? ");
+$select_mail->execute([$email]);
+
+$nbr_existante = $conn->prepare("SELECT * FROM `employes`");
+$nbr_existante ->execute();
+
+if ($select_mail->rowCount() > 0)
 {
     $message [] = "compte existante";
 }
 else {
+    $matricule = date('Y- ', time()).$nbr_existante->rowCount().' -EDR';
     $insertion = $conn->prepare("INSERT INTO `employes` (matricule_Employes,prenom_Employes, nom_Employes, 
     date_naissance_Employes, lieu_naissance_Employes,adresse_mail_Employes, profil_Employes, matiere_enseigne_Employes,mot_de_passe) VALUES (?,?,?,?,?,?,?,?,?)");
-    $insertion->execute([$matricule, $prenom, $nom, $date_naissance, $lieu_naissance, $adresse, $profil, $matiere, $mdp ]);
-    $message []  = "inscription reussi";
+    $insertion->execute([$matricule, $prenom, $nom, $date_naissance, $lieu_naissance, $email, $profil, $matiere, $mdp ]);
+    $message []  = "inscription reussi, votre matricule: $matricule";
+ 
+  
+    
 }
+
 }
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -66,7 +73,7 @@ else {
     }
     ?>
 
-    <form method="post" action="" enctype="multipart/form-data" class="row g-3">
+    <form method="post" action=""  class="row g-3">
     <div class="col-md-6">
         <label for="prenom" class="form-label">Prenom</label>
         <input type="text" class="form-control" id="prenom" name="prenom" required>
@@ -85,7 +92,7 @@ else {
     </div>
     <div class="col-md-3">
         <label for="matricule" class="form-label">matricule</label>
-        <input type="text" class="form-control" id="matricule" name="matricule" required>
+        <input type="text" class="form-control" id="matricule" name="matricule" value="<?php echo $matricule  ?>" readonly>
     </div>
     <div class="col-6">
         <label for="date_naissance" class="form-label">Date de naissance</label>
@@ -96,10 +103,10 @@ else {
         <input type="text" class="form-control" id="lieu_naissance" name="lieu_naissance" required>
     </div>
 
-    <div class="col-md-6">
+<!--     <div class="col-md-6">
         <label for="adresse" class="form-label">Adresse</label>
         <input type="text" class="form-control" id="adresse" name="adresse" required>
-    </div>
+    </div> -->
     <div class="col-md-3">
         <label for="inputState" class="form-label">Profil</label>
         <select id="inputState" class="form-select" name="profil" required>

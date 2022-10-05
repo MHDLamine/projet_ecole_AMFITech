@@ -11,19 +11,23 @@ $lieu_naissance = $_POST['lieu_naissance'];
 /* $adresse = $_POST['adresse']; */
 $profil = $_POST['profil'];
 $matiere = $_POST['matiere'];
-$matricule = date('Y ', time()).$email.' -EDR';
+
 $select_mail = $conn->prepare("SELECT adresse_mail_Employes FROM `employes` WHERE adresse_mail_Employes = ? ");
 $select_mail->execute([$email]);
+
+$nbr_existante = $conn->prepare("SELECT * FROM `employes`");
+$nbr_existante ->execute();
 
 if ($select_mail->rowCount() > 0)
 {
     $message [] = "compte existante";
 }
 else {
+    $matricule = date('Y- ', time()).$nbr_existante->rowCount().' -EDR';
     $insertion = $conn->prepare("INSERT INTO `employes` (matricule_Employes,prenom_Employes, nom_Employes, 
     date_naissance_Employes, lieu_naissance_Employes,adresse_mail_Employes, profil_Employes, matiere_enseigne_Employes,mot_de_passe) VALUES (?,?,?,?,?,?,?,?,?)");
     $insertion->execute([$matricule, $prenom, $nom, $date_naissance, $lieu_naissance, $email, $profil, $matiere, $mdp ]);
-    $message []  = "inscription reussi";
+    $message []  = "inscription reussi, votre matricule: $matricule";
  
   
     

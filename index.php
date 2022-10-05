@@ -9,7 +9,7 @@
    
     <link rel="stylesheet" href="style.css">
     <title>Ecole de la Réussite</title>
-    <img src="" alt="logo_page">
+    <img src="img/logo-lareussite.png" alt="logo_page">
 </head>
 <body>
     <!--intégration du php-->

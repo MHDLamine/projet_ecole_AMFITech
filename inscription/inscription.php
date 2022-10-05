@@ -8,7 +8,7 @@ $email = $_POST['email'];
 $mdp = $_POST['mdp'];
 $date_naissance = $_POST['date_naissance'];
 $lieu_naissance = $_POST['lieu_naissance'];
-/* $adresse = $_POST['adresse']; */
+$compte = false;
 $profil = $_POST['profil'];
 $matiere = $_POST['matiere'];
 
@@ -20,7 +20,7 @@ $nbr_existante ->execute();
 
 if ($select_mail->rowCount() > 0)
 {
-    $message [] = "compte existante";
+    $message [] = "l'adresse mail existe déja";
 }
 else {
     $matricule = date('Y- ', time()).$nbr_existante->rowCount().' -EDR';
@@ -28,9 +28,7 @@ else {
     date_naissance_Employes, lieu_naissance_Employes,adresse_mail_Employes, profil_Employes, matiere_enseigne_Employes,mot_de_passe) VALUES (?,?,?,?,?,?,?,?,?)");
     $insertion->execute([$matricule, $prenom, $nom, $date_naissance, $lieu_naissance, $email, $profil, $matiere, $mdp ]);
     $message []  = "inscription reussi, votre matricule: $matricule";
- 
-  
-    
+    $compte = true;  
 }
 
 }
@@ -54,7 +52,7 @@ else {
     <?php
     if (isset($message)) {
        foreach ($message as $message) {
-        if ($message  == "inscription reussi") {
+        if ($compte == true) {
             echo '<div class="message">'. $message . '</div>';
         }
         else

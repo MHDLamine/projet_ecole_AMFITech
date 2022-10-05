@@ -9,14 +9,16 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #dadfe8;
 }
 
 .login {
   width: 360px;
   height: min-content;
-  padding: 20px;
+  padding: 50px;
   border-radius: 12px;
-  background: gray
+  background: white;
+  
 }
 
 .login h1 {
@@ -35,4 +37,9 @@ body {
 .login form input[type="submit"] {
   font-size: 20px;
   margin-top: 15px;
+}
+.btn{
+  background-color: #6453af;
+  color: white;
+  margin-left: 25%;
 }

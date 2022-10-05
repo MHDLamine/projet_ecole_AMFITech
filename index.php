@@ -15,6 +15,7 @@
     <!--intégration du php-->
   
     <a href="inscription/inscription.php">inscription</a>
+    <a href="compte/connexion_employe.php">connexion</a>
 
 <!-- JavaScript Bundle with Popper -->
 

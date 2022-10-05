@@ -58,7 +58,7 @@ else {
     }
     ?>
 
-    <form method="post" action="" enctype="multipart/form-data" class="row g-3">
+    <form method="post" action=""  class="row g-3">
     <div class="col-md-6">
         <label for="prenom" class="form-label">Prenom</label>
         <input type="text" class="form-control" id="prenom" name="prenom" required>

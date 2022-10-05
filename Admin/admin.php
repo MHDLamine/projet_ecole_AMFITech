@@ -11,7 +11,7 @@ try {
   /* set the PDO error mode to exception */
   $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
   $sql = "INSERT INTO administrateur (adresse_mail_administrateur, mot_de_passe_administrateur)
-  VALUES ('ndiayeissa598@gmail.com','784877639')";
+  VALUES ('mouhamed.ngom50@gmail.com','1111')";
   // use exec() because no results are returned
   $conn->exec($sql);
   echo "Enregistrement réussi";

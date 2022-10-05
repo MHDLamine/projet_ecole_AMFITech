@@ -42,7 +42,7 @@
     <input type="text" name="prenom" placeholder="prenom" id="prenom" required=""><br><br>
     <label for="nom">Nom</label><br>
     <input type="text" name="nom" placeholder="nom" id="nom" required=""><br><br>
-    <label for="date_naissance_eleves">Date de naissance <i>(Format: AAAA-MM-JJ)</i></label><br>
+    <label for="date_naissance_eleves">Date de naissance <i></i></label><br>
     <input type="date" name="date_naissance_eleves" placeholder="ex: 2015-07-30" id="date_naissance_eleves"><br><br>
     <label for="nom">lieu de naissance</label><br>
     <input type="text" name="lieu_naissance_eleves" placeholder="lieu" id="lieu_naissance_eleves" required=""><br><br>
@@ -69,7 +69,7 @@
       <option value="3 ième">3 ième</option>
   </select><br><br>
    
-    <label for="date_inscrip">Date d'inscription <i>(Format: AAAA-MM-JJ)</i></label><br>
+    <label for="date_inscrip">Date d'inscription <i></i></label><br>
     <input type="date" name="date_inscrip" placeholder="ex: 2015-07-30" id="prenom"><br><br>
     <label for="montant">Montant</label><br>
     <input type="text" name="montant" placeholder="montant" id="salaire"><br><br>

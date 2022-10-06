@@ -10,8 +10,23 @@
       $verif = $bdd -> prepare("SELECT adresse_mail_employes, mot_de_passe from employes where adresse_mail_employes = ?");
       $verif -> execute(array('adresse_mail_employes'));
       $data = $verif -> fetch();
+
+      if (!filter_var($email, FILTER_VALIDATE_EMAIL) || $mdp != $data["mot_de_passe"])
+      {
+          echo 'mail ou Mot De Passe incorrect.<br/>';
+      }
+      else
+      {
+          echo 'Vous êtes connecté ! :-)<br/>';
+      }
+      $req->closeCursor();
+      
+  }
+  else
+  {
+      echo 'Renseignez un mail et un Mot De Passe.<br/>';
+  }
     
-    }
 
 
 

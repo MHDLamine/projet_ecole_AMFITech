@@ -1,9 +1,8 @@
 <?php
 $servername = "localhost";
 $username = "root";
-$password = "";
+$password = "gahdamns";
 $dbname = "Gestion_ecole";
-
 try {
   $conn = new PDO("mysql:host=$servername;dbname=Gestion_ecole", $username, $password);
   // set the PDO error mode to exception
@@ -12,3 +11,4 @@ try {
   echo "Connection à la BD échouée: " . $e->getMessage();
 }
 ?>
+

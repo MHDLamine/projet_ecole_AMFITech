@@ -1,6 +1,13 @@
 <?php include '../connexion_php_databases.php';?>
 
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 0df299a1bb3c1c7a1b1bd0d0686a1a29633cbbe3
+>>>>>>> main
 <?php 
 
 $compte = false;
@@ -50,8 +57,10 @@ else {
         }
           
        }
-        ?>
-    <div class="login">
+    
+    ?>
+    <div class="box">
+       <div class="login">
 
         <h1 class="text-center">Bonjour</h1>
 
@@ -69,6 +78,7 @@ else {
 
         </form>
     </div>
+  </div>
 </body>
 </html>
 

@@ -35,8 +35,6 @@
 
     <li><a class="dropdown-item" href="../compte/connexion_employe.php">Employé</a></li>
 
-    <li><a class="dropdown-item" href="../compte/connexion_employe.php">Personnel</a></li>
-
     <li><a class="dropdown-item" href="../Admin/login_admin.php">Administrateur</a></li>
     
   </ul>

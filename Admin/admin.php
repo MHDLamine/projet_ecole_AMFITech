@@ -23,3 +23,4 @@ $dbname = "Gestion_ecole"; */
 ?>
 
 
+

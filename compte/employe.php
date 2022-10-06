@@ -1,4 +1,4 @@
-<?php include './connexion_php_databases.php';?>
+<?php include '../connexion_php_databases.php';?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -12,9 +12,6 @@
    
 </body>
 </html>
-
-
-<a href="../site/index.php" class="button">Retour à l'acceuil</a>
 <style>
 .button {
   background-color: #1c87c9;

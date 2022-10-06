@@ -1,5 +1,6 @@
-itbody{
+body{
     background-color: rgb(214, 214, 214); 
+     background-color:#2c3e50;
 }
 .message, .message_{
     width: 100%;
@@ -8,6 +9,7 @@ itbody{
     color: white;
     text-align: center;
     border-radius: 6px;
+    
 }
 .message{
     background-color: rgb(2, 75, 0);
@@ -15,4 +17,14 @@ itbody{
 .message_{
     background-color: rgb(179, 27, 0);
 }
-
+.container{
+   background-color:#1abc9c;
+}
+#submit{
+    background-color: #2c3e50;
+    margin-bottom: 10px;
+}#submit:hover
+{
+    background-color: white;
+    color:#2c3e50;
+}

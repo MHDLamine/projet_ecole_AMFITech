@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-body:not(.message_) {
+.box:not(.message_) {
   height: 100vh;
   display: flex;
   align-items: center;

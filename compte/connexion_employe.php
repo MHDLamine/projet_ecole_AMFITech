@@ -10,7 +10,7 @@
       $verif = $bdd -> prepare("SELECT adresse_mail_employes, mot_de_passe from employes where adresse_mail_employes = ?");
       $verif -> execute(array('adresse_mail_employes'));
       $data = $verif -> fetch();
-      $row = $verif-> rowCount();
+    
     }
 
 

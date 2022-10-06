@@ -4,7 +4,7 @@ if(isset($_POST['adresse_mail_administrateur']) && isset($_POST['mot_de_passe_ad
 {
 $servername = "localhost";
 $username = "root";
-$password = "";
+$password = "gahdamns";
 $dbname = "Gestion_ecole";
 $db = mysqli_connect($servername, $username, $password,$dbname)
 or die('could not connect to database');

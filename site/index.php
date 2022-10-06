@@ -32,7 +32,11 @@
   <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"> Connexion
   </button>
   <ul class="dropdown-menu">
+<<<<<<< HEAD
     <li><a class="dropdown-item" href="../compte/connexion_employe.php">Employé</a></li>
+=======
+    <li><a class="dropdown-item" href="../compte/connexion_employe.php">Personnel</a></li>
+>>>>>>> 0df299a1bb3c1c7a1b1bd0d0686a1a29633cbbe3
     <li><a class="dropdown-item" href="../Admin/login_admin.php">Administrateur</a></li>
     
   </ul>

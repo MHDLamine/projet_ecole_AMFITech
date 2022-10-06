@@ -33,7 +33,7 @@
   </button>
   <ul class="dropdown-menu">
     <li><a class="dropdown-item" href="../compte/employe.php">Personnel</a></li>
-    <li><a class="dropdown-item" href="../Admin/login_admin.php">Administrateur</a></li>
+    <li><a class="dropdown-item" href="../Admin/login.php">Administrateur</a></li>
     
   </ul>
 </div>

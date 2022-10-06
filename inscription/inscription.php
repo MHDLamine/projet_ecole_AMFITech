@@ -50,7 +50,7 @@ else {
 <body>
 
 
-<?php include("../index.php"); ?>
+
 
 <body>
 <div class="container">

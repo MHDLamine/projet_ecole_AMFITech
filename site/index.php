@@ -7,7 +7,7 @@
         <meta name="author" content="" />
         <title>Ecole de la Réussite</title>
         <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="./img/logo-lareussite.png" />
+        <link rel="icon" type="image/x-icon" href="../img/logo-lareussite.png" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
         <!-- Google fonts-->
@@ -20,7 +20,7 @@
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
             <div class="container">
-                <a class="navbar-brand" href="#page-top">Ecole de la Réussite</a>
+                <a class="navbar-brand" href="index.php">Ecole de la Réussite</a>
                 <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
                     <i class="fas fa-bars"></i>
@@ -38,7 +38,7 @@
   </ul>
 </div>
                         <!-- <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#Connexion.php">Connexion</a></li> -->
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="./inscription/inscription.php">S'inscrire</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="../inscription/inscription.php">S'inscrire</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contact</a></li>
                     </ul>
                 </div>
@@ -48,7 +48,7 @@
         <header class="masthead bg-primary text-white text-center">
             <div class="container d-flex align-items-center flex-column">
                 <!-- Masthead Avatar Image-->
-                <img class="masthead-avatar mb-5" src="./img/logo-lareussite.png" alt="accueil" />
+                <img class="masthead-avatar mb-5" src="../img/logo-lareussite.png" alt="accueil" />
                 <!-- Masthead Heading-->
                 <h1 class="masthead-heading text-uppercase mb-0">Bienvenue dans la plateforme de l'école de la Réussite</h1>
                 <!-- Icon Divider-->
@@ -81,7 +81,7 @@ C’est dans cette perspective que l’Etat du Sénégal a mis en place le plan 
 En effet, ce dernier prévoit de doter le pays d'infrastructures numériques modernes ainsi que de faciliter la création de 35 000 emplois d'ici 2025.
 Alors que le numérique représente déjà 8% du PIB national, les compétences Tech se font encore rares au Sénégal.
 ​​​​​​​Ainsi, se former aux métiers du numérique ouvre de belles perspectives d’avenir, quels que soient les secteurs d’activité.</p></div>
-                    <div class="col-lg-4 me-auto"><p class="lead"> Simplon s'implante au Sénégal en 2017 en  accompagnant Orange Sénégal à la mise sur pied de l’école de codage Sonatel Academy. Cet accompagnement a permis à la Sonatel/Orange de développer et diversifier ses activités dans le cadre de son dispositif Orange Digital Center.</p><img src="./img/ecole.png" height=300px></div>
+                    <div class="col-lg-4 me-auto"><p class="lead"> Simplon s'implante au Sénégal en 2017 en  accompagnant Orange Sénégal à la mise sur pied de l’école de codage Sonatel Academy. Cet accompagnement a permis à la Sonatel/Orange de développer et diversifier ses activités dans le cadre de son dispositif Orange Digital Center.</p><img src="../img/ecole.png" height=300px></div>
                 </div>
                                 
             </div>

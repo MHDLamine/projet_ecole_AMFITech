@@ -51,11 +51,6 @@ else {
 </head>
 <body>
 
-<<<<<<< HEAD
-=======
-
-
->>>>>>> main
 <body>
 <div class="container">
     <h3>S'inscrire</h3>

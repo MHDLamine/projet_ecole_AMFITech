@@ -2,13 +2,22 @@
 session_start();
 if(isset($_POST['adresse_mail_administrateur']) && isset($_POST['mot_de_passe_administrateur']))
 {
-    // connexion à la base de données
-    $db_username = 'root';
-    $db_password = '';
-    $db_name     = 'Gestion_ecole';
-    $db_host     = 'localhost';
-    $db = mysqli_connect($db_host, $db_username, $db_password,$db_name)
-           or die('could not connect to database');
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "Gestion_ecole";
+$db = mysqli_connect($servername, $username, $password,$dbname)
+or die('could not connect to database');
+
+try {
+  $conn = new PDO("mysql:host=$servername;dbname=Gestion_ecole", $username, $password);
+  // set the PDO error mode to exception
+  $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+  echo " <h1>Bienvenu a la base de donnée de l'établissement</h1> <br>";
+
+} catch(PDOException $e) {
+  echo "Connection à la BD échouée: " . $e->getMessage();
+}
     
     // on applique les deux fonctions mysqli_real_escape_string et htmlspecialchars
     // pour éliminer toute attaque de type injection SQL et XSS

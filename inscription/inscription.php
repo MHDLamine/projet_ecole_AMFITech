@@ -8,7 +8,7 @@ $email = $_POST['email'];
 $mdp = $_POST['mdp'];
 $date_naissance = $_POST['date_naissance'];
 $lieu_naissance = $_POST['lieu_naissance'];
-/* $adresse = $_POST['adresse']; */
+$compte = false;
 $profil = $_POST['profil'];
 $matiere = $_POST['matiere'];
 
@@ -20,7 +20,7 @@ $nbr_existante ->execute();
 
 if ($select_mail->rowCount() > 0)
 {
-    $message [] = "compte existante";
+    $message [] = "l'adresse mail existe déja";
 }
 else {
     $matricule = date('Y- ', time()).$nbr_existante->rowCount().' -EDR';
@@ -28,9 +28,7 @@ else {
     date_naissance_Employes, lieu_naissance_Employes,adresse_mail_Employes, profil_Employes, matiere_enseigne_Employes,mot_de_passe) VALUES (?,?,?,?,?,?,?,?,?)");
     $insertion->execute([$matricule, $prenom, $nom, $date_naissance, $lieu_naissance, $email, $profil, $matiere, $mdp ]);
     $message []  = "inscription reussi, votre matricule: $matricule";
- 
-  
-    
+    $compte = true;  
 }
 
 }
@@ -45,12 +43,11 @@ else {
  <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style/inscription_style.css">
     <title>Inscription</title>
       
 </head>
 <body>
-
 
 
 
@@ -61,7 +58,7 @@ else {
     <?php
     if (isset($message)) {
        foreach ($message as $message) {
-        if ($message  == "inscription reussi") {
+        if ($compte == true) {
             echo '<div class="message">'. $message . '</div>';
         }
         else
@@ -131,7 +128,7 @@ else {
     </div>
     
     <div class="col-12">
-        <input type="submit" name="submit" class="btn btn-primary" value="envoyer">
+        <input type="submit" name="submit" id="submit" class="btn btn-primary" value="envoyer">
     </div>
     </form>
  

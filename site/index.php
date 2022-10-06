@@ -20,16 +20,26 @@
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
             <div class="container">
-                <a class="navbar-brand" href="#page-top">Ecole de la Réussite</a>
+                <a class="navbar-brand" href="index.php">Ecole de la Réussite</a>
                 <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
                     <i class="fas fa-bars"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#Connexion.php">Connexion</a></li>
+                    <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+   Connexion
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="../compte/employe.php">Personnel</a></li>
+    <li><a class="dropdown-item" href="../Admin/login_admin.php">Administrateur</a></li>
+    
+  </ul>
+</div>
+                        <!-- <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#Connexion.php">Connexion</a></li> -->
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="../inscription/inscription.php">S'inscrire</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contact</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link pygit-3 px-0 px-lg-3 rounded" href="#contact">Contact</a></li>
                     </ul>
                 </div>
             </div>  
@@ -48,7 +58,7 @@
                     <div class="divider-custom-line"></div>
                 </div>
                 <!-- Masthead Subheading-->
-                <p class="masthead-subheading font-weight-light mb-0">Bienvenue</p>
+                <p class="masthead-subheading font-weight-light mb-0">Cycles : Elémentaire et Moyen</p>
             </div>
         </header>
       
@@ -65,8 +75,13 @@
                 </div>
                 <!-- About Section Content-->
                 <div class="row">
-                    <div class="col-lg-4 ms-auto"><p class="lead">L'école de la Réussite est une école .....................</p></div>
-                    <div class="col-lg-4 me-auto"><p class="lead"> bonjourrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr</p><img src="../img/ecole.png"></div>
+                    <div class="col-lg-4 ms-auto"><p class="lead">Au dernier trimestre 2021, le Sénégal affichait un taux de chômage estimé à 24,5%.
+Il est donc crucial d’agir au niveau local pour faciliter l’intégration des jeunes et des femmes sur le marché du travail.
+C’est dans cette perspective que l’Etat du Sénégal a mis en place le plan “Sénégal 2025” qui fait de l’inclusion numérique une priorité.
+En effet, ce dernier prévoit de doter le pays d'infrastructures numériques modernes ainsi que de faciliter la création de 35 000 emplois d'ici 2025.
+Alors que le numérique représente déjà 8% du PIB national, les compétences Tech se font encore rares au Sénégal.
+​​​​​​​Ainsi, se former aux métiers du numérique ouvre de belles perspectives d’avenir, quels que soient les secteurs d’activité.</p></div>
+                    <div class="col-lg-4 me-auto"><p class="lead"> Simplon s'implante au Sénégal en 2017 en  accompagnant Orange Sénégal à la mise sur pied de l’école de codage Sonatel Academy. Cet accompagnement a permis à la Sonatel/Orange de développer et diversifier ses activités dans le cadre de son dispositif Orange Digital Center.</p><img src="../img/ecole.png" height=300px></div>
                 </div>
                                 
             </div>
@@ -114,7 +129,7 @@
                             </div>
                             <!-- Message input-->
                             <div class="form-floating mb-3">
-                                <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
+                                <textarea class="form-control" id="message" type="text" placeholder="Saisir votre texte destiné à l'école de la Réussite" style="height: 10rem" data-sb-validations="required"></textarea>
                                 <label for="message">Message</label>
                                 <div class="invalid-feedback" data-sb-feedback="message:required">message obligatoire.</div>
                             </div>
@@ -156,7 +171,7 @@
                     </div>
                     <!-- Footer Social Icons-->
                     <div class="col-lg-4 mb-5 mb-lg-0">
-                        <h4 class="text-uppercase mb-3">Topoulen niou</h4>
+                        <h4 class="text-uppercase mb-3">Nos Réseaux sociaux</h4>
                         <a class="btn btn-outline-light btn-social mx-1" href="https://www.facebook.com/fadalba/"><i class="fab fa-fw fa-facebook-f"></i></a>
                         <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-twitter"></i></a>
                         <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-linkedin-in"></i></a>
@@ -167,7 +182,7 @@
                         <h4 class="text-uppercase mb-4">utile</h4>
                         <p class="lead mb-0">
                            
-                            <a href="http://simplon.co">se rendre sur le site de Simplon Sénégal</a>
+                            <a href="http://simplon.co"> Simplon Sénégal</a>
                             
                         </p>
                     </div>

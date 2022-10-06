@@ -49,9 +49,31 @@ else {
     <title>Inscription</title>
       
 </head>
+<<<<<<< HEAD
 <body>
+=======
+>>>>>>> main
 
 <body>
+    <!--boutton de retour vers index--->
+    <a href="../site/index.php" class="button">Retour à l'acceuil</a>
+<style>
+.button {
+  background-color: #1c87c9;
+  border: none;
+  color: white;
+  padding: 20px 34px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+</style>
+<br><br>
+
+<!--*******************************************************************************************************************-->
 <div class="container">
     <h3>S'inscrire</h3>
 
@@ -131,7 +153,7 @@ else {
         <input type="submit" name="submit" id="submit" class="btn btn-primary" value="envoyer">
     </div>
     </form>
- 
+     
 </div>
     <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" 

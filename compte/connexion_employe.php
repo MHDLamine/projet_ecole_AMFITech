@@ -50,8 +50,10 @@ else {
         }
           
        }
-        ?>
-    <div class="login">
+    
+    ?>
+    <div class="box">
+       <div class="login">
 
         <h1 class="text-center">Bonjour</h1>
 
@@ -69,6 +71,7 @@ else {
 
         </form>
     </div>
+  </div>
 </body>
 </html>
 

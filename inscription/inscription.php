@@ -32,7 +32,9 @@ else {
 }
 
 }
-?>
+
+?> 
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -50,7 +52,6 @@ else {
 <body>
 
 
-<?php include("../index.php"); ?>
 
 <body>
 <div class="container">
@@ -133,7 +134,6 @@ else {
     </div>
     </form>
  
-
 </div>
     <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" 

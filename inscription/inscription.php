@@ -49,9 +49,6 @@ else {
 </head>
 <body>
 
-
-<?php include("../index.php"); ?>
-
 <body>
 <div class="container">
     <h3>S'inscrire</h3>

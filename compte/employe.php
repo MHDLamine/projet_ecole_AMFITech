@@ -1,5 +1,4 @@
 <?php include './connexion_php_databases.php';?>
-<<<<<<< HEAD
 <a href="../site/index.php" class="button">Retour à l'acceuil</a>
 <style>
 .button {
@@ -15,5 +14,4 @@
   cursor: pointer;
 }
 </style>
-=======
->>>>>>> main
+

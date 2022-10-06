@@ -63,7 +63,7 @@
     </div>
     <div class="col-md-3">
         <label for="inputPassword4" class="form-label">lieu de naissance</label>
-        <input type="password" class="form-control" id="inputPassword4" name="lieu_naissance_eleves" required>
+        <input type="text" class="form-control" id="inputPassword4" name="lieu_naissance_eleves" required>
     </div>
         <div class="col-md-3">
         <label for="inputState" class="form-label">Cycle</label>

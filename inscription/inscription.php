@@ -1,4 +1,4 @@
-<?php include '../connexion_php_databases.php';  ?>
+ <?php include '../connexion_php_databases.php';  ?>
 
 <?php
 if (isset($_POST['submit'])) { //isset permet de vérifier si la variable $_POST['submit'] existe

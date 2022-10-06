@@ -1,6 +1,5 @@
 <?php include '../connexion_php_databases.php';?>
 
-<<<<<<< HEAD
 <?php 
 
 $compte = false;
@@ -71,5 +70,4 @@ else {
     </div>
 </body>
 </html>
-=======
->>>>>>> main
+

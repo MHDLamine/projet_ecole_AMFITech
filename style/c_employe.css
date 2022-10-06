@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-body {
+body:not(.message_) {
   height: 100vh;
   display: flex;
   align-items: center;
@@ -42,4 +42,18 @@ body {
   background-color: #6453af;
   color: white;
   margin-left: 25%;
+}
+
+.message, .message_{
+  width: auto;
+  height: 30px;
+  font-size:1rem;
+  color: white;
+  padding: 10px;
+}
+.message{
+  background-color: rgb(2, 75, 0);
+}
+.message_{
+ color: rgb(179, 27, 0); 
 }

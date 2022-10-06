@@ -7,8 +7,8 @@
 
       $email = htmlspecialchars($_POST['adresse_mail_employes']);
       $mdp = htmlspecialchars($_POST['mot_de_passe']);
-      $verif = $bdd -> prepare("SELECT adresse_mail_employes, mot_de_passe from employes where adresse_mail_employes = ?");
-      $verif -> execute(array('adresse_mail_employes'));
+      $verif = $bdd -> prepare("SELECT adresse_mail_employes, mot_de_passe from employes where adresse_mail_employes = ? AND mot_de_passe = ?");
+      $verif -> execute(array('adresse_mail_employes', 'mot_de_passe'));
       $data = $verif -> fetch();
 
       if (!filter_var($email, FILTER_VALIDATE_EMAIL) || $mdp != $data["mot_de_passe"])

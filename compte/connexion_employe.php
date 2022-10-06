@@ -20,16 +20,12 @@
           echo 'Vous êtes connecté ! :-)<br/>';
       }
       $req->closeCursor();
-      
   }
   else
   {
       echo 'Renseignez un mail et un Mot De Passe.<br/>';
   }
-    
-
-
-
+  
 ?>
 
 <!DOCTYPE html>

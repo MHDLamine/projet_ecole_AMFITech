@@ -32,8 +32,13 @@
   <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"> Connexion
   </button>
   <ul class="dropdown-menu">
+
+    <li><a class="dropdown-item" href="../compte/connexion_employe.php">Employé</a></li>
+
+    <li><a class="dropdown-item" href="../compte/connexion_employe.php">Personnel</a></li>
+
     <li><a class="dropdown-item" href="../Admin/login_admin.php">Administrateur</a></li>
-    <li><a class="dropdown-item" href="../compte/connexion_employe.php">Employé</a></li> 
+    
   </ul>
 </div>
                         <!-- <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#Connexion.php">Connexion</a></li> -->

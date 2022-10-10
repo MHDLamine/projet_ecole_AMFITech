@@ -1,3 +1,9 @@
+<?php include '../connexion_php_databases.php';?>
+<?php
+     $sql = "SELECT * FROM classes";
+     $stmt = $conn->query($sql);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -27,10 +33,35 @@
         </div>
         <div class="col-8">
                 <div class="tab-content" id="nav-tabContent">
-                        <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">a</div>
-                        <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">b</div>
-                        <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">c</div>
-                        <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">d</div>
+                        <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+                          <!-- coté Back-End -->
+                        </div>
+                        <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+                                       <!-- coté Back-End -->
+                                       <table class="table" >
+                                <thead>
+                                <tr class="table-danger">
+                                <th scope="col">Matricule</th>
+                                <th scope="col">Libelés</th>
+                                <th scope="col">nombre d'élèves</th>
+
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <?php while($row = $stmt->fetch(PDO::FETCH_ASSOC)) : ?>
+                                        <tr>
+                                        <th><?php echo htmlspecialchars($row['id_classes']); ?></th>
+                                        <td><?php echo htmlspecialchars($row['libelle_classes']); ?></td>
+                                        <td><?php echo htmlspecialchars($row['nombre_eleve_classes']); ?></td>
+                                        </tr>
+                                        <?php endwhile; ?>
+                        </div>
+                        <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
+                                 <!-- coté Back-End -->
+                        </div>
+                        <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
+                                 <!-- coté Back-End -->
+                        </div>
                 </div>
         </div>
     </div>

@@ -28,11 +28,12 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
-                    <div class="dropdown">
+                <div class="dropdown">
   <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"> Connexion
   </button>
   <ul class="dropdown-menu">
 
+   
     <li><a class="dropdown-item" href="../compte/connexion_employe.php">Employé</a></li>
 
     <li><a class="dropdown-item" href="../Admin/login_admin.php">Administrateur</a></li>

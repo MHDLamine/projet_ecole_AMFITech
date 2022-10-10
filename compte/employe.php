@@ -14,6 +14,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link rel="stylesheet" href="../style/employe.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <title>Interface employe</title>
 </head>
 
@@ -44,6 +45,7 @@
                                 <th scope="col">Matricule</th>
                                 <th scope="col">Libelés</th>
                                 <th scope="col">nombre d'élèves</th>
+                                <th>Editer</th>
 
                                 </tr>
                                 </thead>
@@ -53,6 +55,7 @@
                                         <th><?php echo htmlspecialchars($row['id_classes']); ?></th>
                                         <td><?php echo htmlspecialchars($row['libelle_classes']); ?></td>
                                         <td><?php echo htmlspecialchars($row['nombre_eleve_classes']); ?></td>
+                                        <td><span class="material-symbols-outlined" style="color: red;cursor:pointer;">delete</span> || <span class="material-symbols-outlined" style="color:blue;cursor:pointer;">edit_square</span></td>
                                         </tr>
                                         <?php endwhile; ?>
                         </div>

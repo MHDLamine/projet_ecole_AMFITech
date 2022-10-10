@@ -4,7 +4,7 @@ if(isset($_POST['adresse_mail_administrateur']) && isset($_POST['mot_de_passe_ad
 {
 $servername = "localhost";
 $username = "root";
-$password = "gahdamns";
+$password = "";
 $dbname = "Gestion_ecole";
 $db = mysqli_connect($servername, $username, $password,$dbname)
 or die('could not connect to database');
@@ -18,12 +18,10 @@ try {
 } catch(PDOException $e) {
   echo "Connection à la BD échouée: " . $e->getMessage();
 }
-    
     // on applique les deux fonctions mysqli_real_escape_string et htmlspecialchars
     // pour éliminer toute attaque de type injection SQL et XSS
     $username = mysqli_real_escape_string($db,htmlspecialchars($_POST['adresse_mail_administrateur'])); 
     $password = mysqli_real_escape_string($db,htmlspecialchars($_POST['mot_de_passe_administrateur']));
-    
     if($username !== "" && $password !== "")
     {
         $requete = "SELECT count(*) FROM administrateur where 

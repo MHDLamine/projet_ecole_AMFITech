@@ -9,9 +9,13 @@ $compte = false;
       $email = htmlspecialchars($_POST['email']);
       $mdp = htmlspecialchars($_POST['mdp']);
       $verif = $conn -> query("SELECT adresse_mail_employes, mot_de_passe from employes where adresse_mail_employes='$email' AND mot_de_passe='$mdp'");
-
+      $pseudo = $conn -> query("SELECT prenom_Employes from employes where adresse_mail_employes='$email' AND mot_de_passe='$mdp'");
+      $row = $pseudo->fetch(PDO::FETCH_ASSOC);
+      
 if($verif->rowCount() > 0) {
-
+  session_start();
+  $_SESSION['email'] = $email;
+  $_SESSION['mot_de_passe'] = $mdp;
   header('location:employe.php');
 }
 else {

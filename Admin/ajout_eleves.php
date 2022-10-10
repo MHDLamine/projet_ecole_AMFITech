@@ -45,9 +45,29 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Ajour élève</title>
 </head>
 <body>
+<a href="../Admin/principale.php" class="button">Retour en arrière</a>
+<style>
+.button {
+  background-color: #1c87c9;
+  border: none;
+  color: white;
+  padding: 20px 34px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+</style>
+</br></br>
+<h1 align=center> Ajout d'un nouveau élève</h1>
+</br>
+
+  <div class="container">
 <form method="post" action=""  class="row g-3">
     <div class="col-md-6">
         <label for="prenom" class="form-label">Prenom</label>
@@ -101,16 +121,16 @@
         <label for="matricule" class="form-label">Date d'inscription</label>
         <input type="date" class="form-control" id="date_inscrip" name="date_inscrip"  required>
     </div>
-    <div class="col-6">
+    <div class="col-3">
         <label for="montant" class="form-label">Montant</label>
         <input type="number" class="form-control" id="date_naissance" name="montant" required>
     </div>
     <div class="col-12">
-        <input type="submit" name="submit" class="btn btn-primary" value="envoyer">
+        <input type="submit" name="submit" class="btn btn-primary" value="Valider">
     </div>
     </form>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" 
 crossorigin="anonymous"></script>
-
+</div>
 </body>
 </html>

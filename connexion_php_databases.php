@@ -11,8 +11,3 @@ try {
   echo "Connection à la BD échouée: " . $e->getMessage();
 }
 ?>
-
-  
-
-  
-

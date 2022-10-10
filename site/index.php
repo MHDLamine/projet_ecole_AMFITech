@@ -25,7 +25,7 @@
         
             <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
             <div class="container">
-                <a class="navbar-brand" href="./index.php">Ecole de la Réussite </a>
+                <a class="navbar-brand" href="./index.php"><h1>Ecole de la Réussite </h1></a>
                 <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
                     <i class="fas fa-bars"></i>
@@ -33,7 +33,7 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
                 <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="top"> Connexion
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="top"> <h3>Connexion</h3>
                 </button>
   <ul class="dropdown-menu">
 
@@ -41,13 +41,13 @@
    
     <li><a class="dropdown-item" href="../compte/connexion_employe.php">Employé</a></li>
     <li><a class="dropdown-item" href="../Admin/login_admin.php">Administrateur</a></li>
-    <li><a class="dropdown-item" href="../compte/connexion_employe.php">Employé</a></li> 
-  </ul>
+    </ul>
 </div>
                         <!-- <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#Connexion.php">Connexion</a></li> -->
 
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="../inscription/inscription.php">S'inscrire</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link pygit-3 px-0 px-lg-3 rounded" href="#contact" id="top">Contact</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="../inscription/inscription.php"><h3>S'inscrire</h3></a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact"><h3>Contact</h3></a></li>
+                       
 
                     </ul>
                 </div>
@@ -85,13 +85,13 @@
                 </div>
                 <!-- About Section Content-->
                 <div class="row">
-                    <div class="col-lg-4 ms-auto"><p class="lead">Au dernier trimestre 2021, le Sénégal affichait un taux de chômage estimé à 24,5%.
+                    <div class="col-lg-4 ms-auto"><p class="lead"><h4>Au dernier trimestre 2021, le Sénégal affichait un taux de chômage estimé à 24,5%.
 Il est donc crucial d’agir au niveau local pour faciliter l’intégration des jeunes et des femmes sur le marché du travail.
 C’est dans cette perspective que l’Etat du Sénégal a mis en place le plan “Sénégal 2025” qui fait de l’inclusion numérique une priorité.
 En effet, ce dernier prévoit de doter le pays d'infrastructures numériques modernes ainsi que de faciliter la création de 35 000 emplois d'ici 2025.
 Alors que le numérique représente déjà 8% du PIB national, les compétences Tech se font encore rares au Sénégal.
-​​​​​​​Ainsi, se former aux métiers du numérique ouvre de belles perspectives d’avenir, quels que soient les secteurs d’activité.</p></div>
-                    <div class="col-lg-4 me-auto"><p class="lead"> Simplon s'implante au Sénégal en 2017 en  accompagnant Orange Sénégal à la mise sur pied de l’école de codage Sonatel Academy. Cet accompagnement a permis à la Sonatel/Orange de développer et diversifier ses activités dans le cadre de son dispositif Orange Digital Center.</p><img src="../img/ecole.png" height=300px></div>
+​​​​​​​Ainsi, se former aux métiers du numérique ouvre de belles perspectives d’avenir, quels que soient les secteurs d’activité.</h4></p></div>
+                    <div class="col-lg-4 me-auto"><p class="lead"> <h4>Simplon s'implante au Sénégal en 2017 en  accompagnant Orange Sénégal à la mise sur pied de l’école de codage Sonatel Academy. Cet accompagnement a permis à la Sonatel/Orange de développer et diversifier ses activités dans le cadre de son dispositif Orange Digital Center.</h4></p><img src="../img/ecole.png" height=300px></div>
                 </div>
                                 
             </div>

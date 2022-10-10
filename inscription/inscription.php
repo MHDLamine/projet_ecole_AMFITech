@@ -5,7 +5,7 @@ if (isset($_POST['submit'])) { //isset permet de vérifier si la variable $_POST
 $prenom = $_POST['prenom'];
 $nom = $_POST['nom'];       
 $email = $_POST['email']; 
-$mdp = $_POST['mdp'];
+$mdp = md5($_POST['mdp']);
 $date_naissance = $_POST['date_naissance'];
 $lieu_naissance = $_POST['lieu_naissance'];
 $compte = false;

@@ -11,7 +11,6 @@ try {
   echo "Connection à la BD échouée: " . $e->getMessage();
 }
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>

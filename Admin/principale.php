@@ -22,5 +22,6 @@ $message []  = "Ajouter un élève";
         </div>
         <button><a href="ajout_eleves.php" text-décoration="none">Ajouter un élève</a></button>
         <button><a href="deconnect.php">Déconnecter</a></button>
+        <button><a href="supp.php">Supprimer</a></button>
     </body>
 </html>

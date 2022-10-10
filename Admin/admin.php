@@ -3,7 +3,7 @@
 <?php
 $servername = "localhost";
 $username = "root";
-$password = "";
+$password = "gahdamns";
 $dbname = "Gestion_ecole"; 
 
  try { 

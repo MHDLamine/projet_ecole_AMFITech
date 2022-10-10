@@ -76,7 +76,7 @@ else {
 </html>
 
 
-<<<<<<< HEAD
+
 
 <?php 
 

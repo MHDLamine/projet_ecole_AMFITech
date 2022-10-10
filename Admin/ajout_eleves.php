@@ -8,10 +8,10 @@
     echo  '<div style="background: green; padding: 5px;"> l\'eleve a bien été ajouté</div>' .'<br>'; 
   }
   /**Recuperation */
-  $recup=$conn->query("SELECT * FROM eleves");
-  /*$contenu = $recup->fetch(PDO::FETCH_ASSOC);*/
+/*   $recup=$conn->query("SELECT * FROM eleves");
+  $contenu = $recup->fetch(PDO::FETCH_ASSOC); */
   /**Affichage */
-/*   $present = '';
+/*    $present = '';
   $absent = '';
   echo "<table border= 2px> <tr>";
   for($i=0; $i < $recup->columnCount(); $i++) 
@@ -21,8 +21,8 @@
   }
     echo $present .='<th>Present</th>';
     echo $absent .='<th>Abcent</th>';
-    echo "</tr>"; */
-/*   while($ligne = $recup->fetch(PDO::FETCH_ASSOC))
+    echo "</tr>"; 
+  while($ligne = $recup->fetch(PDO::FETCH_ASSOC))
   {
     echo '<tr>';
     foreach($ligne as $indice => $information)
@@ -34,7 +34,7 @@
     echo '<td>' . $action . '</td>';
     echo '</tr>';
   }
-  echo '</table>'; */
+  echo '</table><br>'; */ 
 ?> 
 <!DOCTYPE html>
 <html lang="en">

@@ -1,3 +1,4 @@
+<?php include '../connexion_php_databases.php';?>
 <?php
 session_start();
 if(isset($_POST['adresse_mail_administrateur']) && isset($_POST['mot_de_passe_administrateur']))

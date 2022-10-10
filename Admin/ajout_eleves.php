@@ -48,6 +48,10 @@
   <title>Ajour élève</title>
 </head>
 <body>
+
+</br>
+  <h1 align=center> Ajout d'un nouveau élève</h1>
+
 <a href="../Admin/principale.php" class="button">Retour en arrière</a>
 <style>
 .button {
@@ -68,6 +72,7 @@
 </br>
 
   <div class="container">
+
 <form method="post" action=""  class="row g-3">
     <div class="col-md-6">
         <label for="prenom" class="form-label">Prenom</label>

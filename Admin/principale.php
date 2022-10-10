@@ -1,3 +1,4 @@
+<?php include '../connexion_php_databases.php';?>
 <?php
 $message []  = "Ajouter un élève";
 ?>

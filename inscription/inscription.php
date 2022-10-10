@@ -11,23 +11,33 @@ $lieu_naissance = $_POST['lieu_naissance'];
 $compte = false;
 $profil = $_POST['profil'];
 $matiere = $_POST['matiere'];
-
+$matricule = /* date('Y- ', time()).$row.' -EDR'; */ 'générer automatiquement';
 $select_mail = $conn->prepare("SELECT adresse_mail_Employes FROM `employes` WHERE adresse_mail_Employes = ? ");
 $select_mail->execute([$email]);
 
-$nbr_existante = $conn->prepare("SELECT * FROM `employes`");
-$nbr_existante ->execute();
 
 if ($select_mail->rowCount() > 0)
 {
     $message [] = "l'adresse mail existe déja";
 }
 else {
-    $matricule = date('Y- ', time()).$nbr_existante->rowCount().' -EDR';
+    //on insert les données dans la base
     $insertion = $conn->prepare("INSERT INTO `employes` (matricule_Employes,prenom_Employes, nom_Employes, 
     date_naissance_Employes, lieu_naissance_Employes,adresse_mail_Employes, profil_Employes, matiere_enseigne_Employes,mot_de_passe) VALUES (?,?,?,?,?,?,?,?,?)");
     $insertion->execute([$matricule, $prenom, $nom, $date_naissance, $lieu_naissance, $email, $profil, $matiere, $mdp ]);
-    $message []  = "inscription reussi, votre matricule: $matricule";
+    //on récuperer l'id de enregistrement 
+    $sql = "SELECT id_Employes FROM `employes` WHERE  adresse_mail_Employes = '$email' ";
+    $id = $conn->prepare($sql);
+    $id->execute();
+    $row = $id->fetch(PDO::FETCH_ASSOC);
+    //on modifie le matricule
+    $matricule = date('Y-', time()).$row['id_Employes'].'-EDR';
+    //on modifie la derniere matricule du BD
+    $sql2 = "UPDATE employes  SET  matricule_Employes = '$matricule' WHERE adresse_mail_Employes = '$email' ";
+    $matricule2 = $conn->prepare($sql2);
+    $matricule2->execute();
+
+    $message []  = "inscription reussi, votre matricule: ". $matricule;
     $compte = true;  
 }
 
@@ -45,7 +55,7 @@ else {
  <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-   <!--  <link rel="stylesheet" href="../style/inscription_style.css"> -->
+    <link rel="stylesheet" href="../style/inscription_style.css">
     <title>Inscription</title>
       
 </head>
@@ -117,11 +127,6 @@ else {
         <label for="lieu_naissance" class="form-label">Lieu de naissance</label>
         <input type="text" class="form-control" id="lieu_naissance" name="lieu_naissance" required>
     </div>
-
-<!--     <div class="col-md-6">
-        <label for="adresse" class="form-label">Adresse</label>
-        <input type="text" class="form-control" id="adresse" name="adresse" required>
-    </div> -->
     <div class="col-md-3">
         <label for="inputState" class="form-label">Profil</label>
         <select id="inputState" class="form-select" name="profil" required>

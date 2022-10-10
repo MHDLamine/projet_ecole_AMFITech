@@ -8,7 +8,11 @@ $message []  = "Ajouter un élève";
         <!-- importer le fichier de style -->
         <link rel="stylesheet" href="style.css" media="screen" type="text/css" />
     </head>
+    
     <body>
+    <a href="../site/index.php" class="button">Retour à l'acceuil</a>
+
+        <div class="img"></div>
         <img src="../img/logo-lareussite.png" alt="logo_page">
         <div id="content">
             <!-- tester si l'utilisateur est connecté -->

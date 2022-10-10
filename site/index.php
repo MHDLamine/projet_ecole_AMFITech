@@ -13,6 +13,10 @@
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="../style/index_style.css">
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
     </head>
@@ -21,43 +25,43 @@
         
             <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
             <div class="container">
-                <a class="navbar-brand" href="./index.php">Ecole de la Réussite</a>
+                <a class="navbar-brand" href="./index.php">Ecole de la Réussite </a>
                 <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
                     <i class="fas fa-bars"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
-                    <div class="dropdown">
-  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"> Connexion
-  </button>
+                <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="top"> Connexion
+                </button>
   <ul class="dropdown-menu">
 
+
+   
     <li><a class="dropdown-item" href="../compte/connexion_employe.php">Employé</a></li>
-
-    <li><a class="dropdown-item" href="../compte/connexion_employe.php">Personnel</a></li>
-
     <li><a class="dropdown-item" href="../Admin/login_admin.php">Administrateur</a></li>
-    
+    <li><a class="dropdown-item" href="../compte/connexion_employe.php">Employé</a></li> 
   </ul>
 </div>
                         <!-- <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#Connexion.php">Connexion</a></li> -->
 
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="../inscription/inscription.php">S'inscrire</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link pygit-3 px-0 px-lg-3 rounded" href="#contact">Contact</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link pygit-3 px-0 px-lg-3 rounded" href="#contact" id="top">Contact</a></li>
 
                     </ul>
                 </div>
             </div>  
         </nav>
-
+        
+    
         <!-- Masthead-->
         <header class="masthead bg-primary text-white text-center">
             <div class="container d-flex align-items-center flex-column">
                 <!-- Masthead Avatar Image-->
                 <img class="masthead-avatar mb-5" src="../img/logo-lareussite.png" alt="accueil" />
                 <!-- Masthead Heading-->
-                <h1 class="masthead-heading text-uppercase mb-0">Bienvenue dans la plateforme de l'école de la Réussite</h1>
+                <h1 class="masthead-heading text-uppercase mb-0">Bienvenue sur plateforme de l'école de la Réussite</h1>
                 <!-- Icon Divider-->
                 <div class="divider-custom divider-light">
                     <div class="divider-custom-line"></div>
@@ -68,8 +72,7 @@
                 <p class="masthead-subheading font-weight-light mb-0">Cycles : Elémentaire et Moyen</p>
             </div>
         </header>
-      
-            <!-- About Section-->
+                  <!-- About Section-->
         <section class="page-section bg-primary text-white mb-0" id="about">
             <div class="container">
                 <!-- About Section Heading-->

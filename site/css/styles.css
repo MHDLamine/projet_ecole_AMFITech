@@ -11459,7 +11459,7 @@ html {
     font-size: 1.5rem;
   }
 }
-.portfolio .portfolio-item {
+/* .portfolio .portfolio-item {
   cursor: pointer;
   position: relative;
   display: block;
@@ -11497,7 +11497,7 @@ html {
     line-height: 2.5rem;
   }
 }
-
+ */
 .footer {
   padding-top: 5rem;
   padding-bottom: 5rem;

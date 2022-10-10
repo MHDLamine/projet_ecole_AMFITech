@@ -48,6 +48,8 @@
   <title>Document</title>
 </head>
 <body>
+</br>
+  <h1 align=center> Ajout d'un nouveau élève</h1>
 <form method="post" action=""  class="row g-3">
     <div class="col-md-6">
         <label for="prenom" class="form-label">Prenom</label>

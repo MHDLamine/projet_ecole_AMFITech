@@ -58,8 +58,6 @@ else {
 
    <link rel="stylesheet" href="../style/inscription_style.css"> 
 
-    <link rel="stylesheet" href="../style/inscription_style.css">
-
     <title>Inscription</title>
       
 </head>

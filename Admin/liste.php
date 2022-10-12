@@ -32,7 +32,6 @@
         echo '<th class="thliste">Supprimer</th>';
         echo '<th class="thliste">Modifier</th>';
         echo '</tr>';
-   
             while($donnees = $reponse->fetch()) // Renvoit les valeurs de la bdd
             {
     echo '<tr>';
@@ -45,19 +44,17 @@
       echo '<td class="tdliste">' . $donnees['classe_eleves'] . '</td>';
       echo '<td class="tdliste"> 
 
-      <a href="supprimer.php? id='.$donnees["id_eleves"].'" onclick="return confirm("Êtes-vous sûr de vouloir supprimer")"><span class="material-symbols-outlined">
+      <a href="supprimer.php? id='.$donnees["id_eleves"].'" onclick="return confirm("Are you sure you want to delete this entry?")"><span class="material-symbols-outlined">
       delete
       </span></a>
       </td>';
-      echo '<td class="tdliste"> <button ><span class="material-symbols-outlined">edit</span></button></td>';
+      echo '<td class="tdliste"><a value="modifier" href="edite.php?id=<?= $person->id_eleves ?>" class="btn btn-info">Edit</a></td>';
     echo '</tr>';
             }
   echo '</table></div></center>';
             $pdo = null;
         ?>
-  
-    <p>
-      
+    <p> 
   <form action="index.php" method="post">
    Numéro de fiche :<input type="text" name="id" id="id" size="1px" />
   </form>

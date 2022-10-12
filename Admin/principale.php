@@ -12,12 +12,17 @@ $message []  = "Ajouter un élève";
        <!-- CSS only -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     </head>
-    
     <body>
+<<<<<<< HEAD
+    <a href="../site/index.php" class="button">Retour à l'acceuil</a>
+        <div class="img"></div>
+        <img src="../img/logo-lareussite.png" alt="logo_page">
+=======
    
        <!--  <div class="img" ></div>
         <img src="../img/logo-lareussite.png" alt="logo_page" width=90px>
         <a class="btn btn-primary" href="../site/index.php"  role="button">Accueil</a>
+>>>>>>> main
         <div id="content">
         <button><a href="../Admin/ajout_eleves.php" text-décoration="none">Ajouter un élève</a></button>
         <button><a href="../Admin/deconnect.php">Déconnecter</a></button> -->
@@ -55,6 +60,13 @@ $message []  = "Ajouter un élève";
                 }
             ?>
         </div>
+<<<<<<< HEAD
+        <button><a href="ajout_eleves.php">Ajouter un élève</a></button>
+        <button><a href="liste.php">Voir la liste des élèves déja inscrit</a></button>
+        <button><a href="deconnect.php">Déconnecter</a></button>
+        <button><a href="supp.php">Supprimer</a></button>
+=======
        
+>>>>>>> main
     </body>
 </html>

@@ -2,7 +2,7 @@
 <?php
 $servername = "localhost";
 $username = "root";
-$password = "gahdamns";
+$password = "";
 $dbname = "Gestion_ecole"; 
  try { 
    $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password); 
@@ -17,11 +17,7 @@ $dbname = "Gestion_ecole";
   echo "Enregistrement réussi";
 } catch(PDOException $e) {
   echo $sql . "<br>" . $e->getMessage(); 
-
 }
 
  $conn = null; 
 ?>
-
-
-

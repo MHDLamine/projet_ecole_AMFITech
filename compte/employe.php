@@ -25,6 +25,10 @@
 </head>
 
 <body>
+   
+</body>
+</html>
+
 
 <div class="container">
 
@@ -43,7 +47,7 @@
                         <a class="list-group-item list-group-item-action active" id="list-home-list" data-bs-toggle="list" href="#list-home" role="tab" aria-controls="list-home">Profil</a>
                         <a class="list-group-item list-group-item-action" id="list-profile-list" data-bs-toggle="list" href="#list-profile" role="tab" aria-controls="list-profile">Liste des classes</a>
                         <a class="list-group-item list-group-item-action" id="list-messages-list" data-bs-toggle="list" href="#list-messages" role="tab" aria-controls="list-messages">Feuilles de presence</a>
-                     
+
                 </div>
         </div>
         <div class="col-8">
@@ -59,7 +63,7 @@
                                 <th scope="col">Matricule </th>
                                 <th scope="col">Libelés</th>
                                 <th scope="col">nombre d'élèves</th>
-                                <th>Editer</th>
+                                <th>Action</th>
                                 </tr>
                                 </thead>
                                 <tbody>
@@ -86,4 +90,33 @@
 </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 
+
         
+
+
+
+<?php include '../connexion_php_databases.php';?>
+
+
+
+<style>
+.button {
+  background-color: #1abc9c;
+  border: none;
+  color: white;
+  padding: 20px 34px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+</style>
+
+
+
+
+
+
+

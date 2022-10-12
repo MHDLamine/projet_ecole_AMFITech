@@ -5,7 +5,7 @@ if (isset($_POST['submit'])) { //isset permet de vérifier si la variable $_POST
 $prenom = $_POST['prenom'];
 $nom = $_POST['nom'];       
 $email = $_POST['email']; 
-$mdp = $_POST['mdp'];
+$mdp = md5($_POST['mdp']);
 $date_naissance = $_POST['date_naissance'];
 $lieu_naissance = $_POST['lieu_naissance'];
 $compte = false;
@@ -63,9 +63,21 @@ else {
 </head>
 <body>
     <!--boutton de retour vers index--->
-    <a class="btn btn-primary" href="../site/index.php"" role="button">Retour</a>
- 
-
+    <a href="../site/index.php" class="button">Retour à l'acceuil</a>
+<style>
+.button {
+  background-color: #1abc9c;
+  border: none;
+  color: white;
+  padding: 20px 34px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+</style>
 <br><br>
 
 <!--*******************************************************************************************************************-->

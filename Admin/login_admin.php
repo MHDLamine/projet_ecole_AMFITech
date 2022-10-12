@@ -31,5 +31,19 @@
         </div>
     </body>
 
-   
+    <style>
+     .button {
+  background-color: #1abc9c;
+  border: none;
+  color: white;
+  padding: 20px 34px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+    </style>
 </html>

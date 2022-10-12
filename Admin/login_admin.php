@@ -5,9 +5,10 @@
        <meta charset="utf-8">
         <!-- importer le fichier de style -->
         <link rel="stylesheet" href="style.css" media="screen" type="text/css" />
-        <a href="../site/index.php" class="button">Retour à l'acceuil</a>
+        
     </head>
     <body>
+        <a href="../site/index.php" class="button">Retour à l'acceuil</a>
         <div id="container">
             <!-- zone de connexion -->    
             <form action="verification.php" method="POST">

@@ -4,12 +4,10 @@
  session_start();
 
 ?>
-
 <?php
      $sql = "SELECT * FROM classes";
      $stmt = $conn->query($sql);
 ?>
-
 <!DOCTYPE html>
 <html lang="">
 
@@ -72,7 +70,7 @@
                                         <th><?php echo htmlspecialchars($row['id_classes']); ?></th>
                                         <td><?php echo htmlspecialchars($row['libelle_classes']); ?></td>
                                         <td><?php echo htmlspecialchars($row['nombre_eleve_classes']); ?></td>
-                                        <td><span class="material-symbols-outlined" style="color: red;cursor:pointer;">delete</span> || <span class="material-symbols-outlined" style="color:blue;cursor:pointer;">edit_square</span></td>
+                                        <td> <a href="" title="Supprimé"> <span class="material-symbols-outlined" style="color: red;cursor:pointer;">delete</span></a> ||<a href="#" title="modifier">  <span class="material-symbols-outlined" style="color:blue;cursor:pointer;">edit_square</span></a></td>
                                         </tr>
                                         <?php endwhile; ?>
                                         

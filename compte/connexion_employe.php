@@ -1,9 +1,5 @@
 <?php include '../connexion_php_databases.php';?>
-<<<<<<<<< Temporary merge branch 1
 
-
-=========
->>>>>>>>> Temporary merge branch 2
 <?php 
 
 $compte = false;

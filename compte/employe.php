@@ -47,7 +47,7 @@
                         <a class="list-group-item list-group-item-action active" id="list-home-list" data-bs-toggle="list" href="#list-home" role="tab" aria-controls="list-home">Profil</a>
                         <a class="list-group-item list-group-item-action" id="list-profile-list" data-bs-toggle="list" href="#list-profile" role="tab" aria-controls="list-profile">Liste des classes</a>
                         <a class="list-group-item list-group-item-action" id="list-messages-list" data-bs-toggle="list" href="#list-messages" role="tab" aria-controls="list-messages">Feuilles de presence</a>
-                     
+
                 </div>
         </div>
         <div class="col-8">
@@ -100,7 +100,7 @@
 
 <style>
 .button {
-  background-color: #1c87c9;
+  background-color: #1abc9c;
   border: none;
   color: white;
   padding: 20px 34px;

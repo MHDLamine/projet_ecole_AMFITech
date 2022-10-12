@@ -5,7 +5,7 @@ if(isset($_POST['adresse_mail_administrateur']) && isset($_POST['mot_de_passe_ad
 {
 $servername = "localhost";
 $username = "root";
-$password = "";
+$password = "gahdamns";
 $dbname = "Gestion_ecole";
 $db = mysqli_connect($servername, $username, $password,$dbname)
 or die('could not connect to database');
@@ -37,17 +37,17 @@ try {
         }
         else
         {
-           header('Location: login.php?erreur=1'); // utilisateur ou mot de passe incorrect
+           header('Location: login_admin.php?erreur=1'); // utilisateur ou mot de passe incorrect
         }
     }
     else
     {
-       header('Location: login.php?erreur=2'); // utilisateur ou mot de passe vide
+       header('Location: login_admin.php?erreur=2'); // utilisateur ou mot de passe vide
     }
 }
 else
 {
-   header('Location: login.php');
+   header('Location: login_admin.php');
 }
 mysqli_close($db); // fermer la connexion
 ?>

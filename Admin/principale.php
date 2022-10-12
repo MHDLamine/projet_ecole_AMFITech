@@ -31,19 +31,17 @@ $message []  = "Ajouter un élève";
     <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-         
           <a class="btn btn-primary" href="../site/index.php" role="button">Acceuil</a>
-          
         </li>
         <li style="margin-left: 10px;" class="nav-item">
            <a class="btn btn-primary" href="../Admin/ajout_eleves.php" role="button">Ajout élève</a>
         </li>
-        
+        <li style="margin-left: 10px;" class="nav-item">
+           <a class="btn btn-primary" href="../Admin/liste.php" role="button">Voir la liste des élèves inscrit</a>
+        </li>
       </ul>
       <form class="d-flex" role="search">
-         
          <a class="btn btn-primary" href="../Admin/deconnect.php" role="button">Déconnexion</a>
-        
       </form>
     </div>
   </div>

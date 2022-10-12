@@ -52,9 +52,9 @@
 </head>
 <body>
 
-<<<<<<< HEAD
+
 </br>
-<a href="../Admin/principale.php" class="button">Retour en arrière</a>
+
 <style>
 .button {
   background-color: #1c87c9;
@@ -69,11 +69,10 @@
   cursor: pointer;
 }
 </style>
-=======
 <a class="btn btn-primary" href="../Admin/principale.php" role="button">Retour</a>
 
 
->>>>>>> main
+
 </br></br>
 <h1 align=center> Ajout d'un nouveau élève</h1>
 </br>

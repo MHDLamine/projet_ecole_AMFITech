@@ -18,5 +18,6 @@ $dbname = "Gestion_ecole";
 } catch(PDOException $e) {
   echo $sql . "<br>" . $e->getMessage(); 
 }
+
  $conn = null; 
 ?>

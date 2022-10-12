@@ -5,9 +5,12 @@
        <meta charset="utf-8">
         <!-- importer le fichier de style -->
         <link rel="stylesheet" href="style.css" media="screen" type="text/css" />
-        <a href="../site/index.php" class="button">Retour à l'acceuil</a>
+        
     </head>
+    
     <body>
+    <a class="btn btn-primary" href="../site/index.php" role="button">Retour</a>
+        
         <div id="container">
             <!-- zone de connexion -->    
             <form action="verification.php" method="POST">
@@ -30,7 +33,7 @@
 
     <style>
      .button {
-  background-color: #1c87c9;
+  background-color: #1abc9c;
   border: none;
   color: white;
   padding: 20px 34px;

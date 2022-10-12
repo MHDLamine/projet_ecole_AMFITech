@@ -5,15 +5,45 @@ $message []  = "Ajouter un élève";
     <head>
         <meta charset="utf-8">
         <!-- importer le fichier de style -->
-        <link rel="stylesheet" href="style.css" media="screen" type="text/css" />
+       <!--  <link rel="stylesheet" href="style.css" media="screen" type="text/css" /> -->
+        <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" /> -->
+       <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     </head>
     
     <body>
-    <a href="../site/index.php" class="button">Retour à l'acceuil</a>
-
-        <div class="img"></div>
-        <img src="../img/logo-lareussite.png" alt="logo_page">
+   
+       <!--  <div class="img" ></div>
+        <img src="../img/logo-lareussite.png" alt="logo_page" width=90px>
+        <a class="btn btn-primary" href="../site/index.php"  role="button">Accueil</a>
         <div id="content">
+        <button><a href="../Admin/ajout_eleves.php" text-décoration="none">Ajouter un élève</a></button>
+        <button><a href="../Admin/deconnect.php">Déconnecter</a></button> -->
+        
+        <nav class="navbar navbar-expand-lg bg-light">
+  <div class="container-fluid">
+   
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+         
+          <a class="btn btn-primary" href="../site/index.php" role="button">Acceuil</a>
+          
+        </li>
+        <li style="margin-left: 10px;" class="nav-item">
+           <a class="btn btn-primary" href="../Admin/ajout_eleves.php" role="button">Ajout élève</a>
+        </li>
+        
+      </ul>
+      <form class="d-flex" role="search">
+         
+         <a class="btn btn-primary" href="../Admin/deconnect.php" role="button">Déconnexion</a>
+        
+      </form>
+    </div>
+  </div>
+</nav>
             <!-- tester si l'utilisateur est connecté -->
             <?php
                 session_start();
@@ -24,8 +54,6 @@ $message []  = "Ajouter un élève";
                 }
             ?>
         </div>
-        <button><a href="ajout_eleves.php" text-décoration="none">Ajouter un élève</a></button>
-        <button><a href="deconnect.php">Déconnecter</a></button>
-        <button><a href="supp.php">Supprimer</a></button>
+       
     </body>
 </html>

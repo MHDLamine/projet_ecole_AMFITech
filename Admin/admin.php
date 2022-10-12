@@ -20,8 +20,6 @@ $dbname = "Gestion_ecole";
 
 }
 
-
-
  $conn = null; 
 ?>
 

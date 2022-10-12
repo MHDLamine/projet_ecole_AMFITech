@@ -26,8 +26,6 @@
 
 <body>
 
-
-
 <div class="container">
 
 <nav class="navbar bg-light">
@@ -45,7 +43,7 @@
                         <a class="list-group-item list-group-item-action active" id="list-home-list" data-bs-toggle="list" href="#list-home" role="tab" aria-controls="list-home">Profil</a>
                         <a class="list-group-item list-group-item-action" id="list-profile-list" data-bs-toggle="list" href="#list-profile" role="tab" aria-controls="list-profile">Liste des classes</a>
                         <a class="list-group-item list-group-item-action" id="list-messages-list" data-bs-toggle="list" href="#list-messages" role="tab" aria-controls="list-messages">Feuilles de presence</a>
-                        <a class="list-group-item list-group-item-action" id="list-settings-list" data-bs-toggle="list" href="#list-settings" role="tab" aria-controls="list-settings">Deconnexion</a>
+                     
                 </div>
         </div>
         <div class="col-8">
@@ -89,31 +87,3 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 
         
-
-
-
-<?php include '../connexion_php_databases.php';?>
-
-
-
-<style>
-.button {
-  background-color: #1c87c9;
-  border: none;
-  color: white;
-  padding: 20px 34px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 20px;
-  margin: 4px 2px;
-  cursor: pointer;
-}
-</style>
-
-
-
-
-
-
-

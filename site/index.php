@@ -7,7 +7,7 @@
         <meta name="author" content="" />
         <title>Ecole de la Réussite</title>
         <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="../img/logo-lareussite.png" />
+        <link rel="icon" type="image/x-icon" href="../img/logo-lareussite.png"/>
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
         <!-- Google fonts-->
@@ -72,7 +72,8 @@
                 <p class="masthead-subheading font-weight-light mb-0">Cycles : Elémentaire et Moyen</p>
             </div>
         </header>
-                  <!-- About Section-->
+          
+                   <!-- About Section-->
         <section class="page-section bg-primary text-white mb-0" id="about">
             <div class="container">
                 <!-- About Section Heading-->
@@ -192,7 +193,7 @@ Alors que le numérique représente déjà 8% du PIB national, les compétences 
                         <h4 class="text-uppercase mb-4">utile</h4>
                         <p class="lead mb-0">
                            
-                            <a href="http://simplon.co"> Simplon Sénégal</a>
+                            <a href="https://senegal.simplon.co/"> Simplon Sénégal</a>
                             
                         </p>
                     </div>

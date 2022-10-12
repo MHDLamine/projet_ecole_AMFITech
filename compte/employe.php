@@ -63,7 +63,7 @@
                                 <th scope="col">Matricule </th>
                                 <th scope="col">Libelés</th>
                                 <th scope="col">nombre d'élèves</th>
-                                <th>Editer</th>
+                                <th>Action</th>
                                 </tr>
                                 </thead>
                                 <tbody>

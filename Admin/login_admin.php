@@ -5,11 +5,14 @@
        <meta charset="utf-8">
         <!-- importer le fichier de style -->
         <link rel="stylesheet" href="style.css" media="screen" type="text/css" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
         
     </head>
     
     <body>
     <a class="btn btn-primary" href="../site/index.php" role="button">Retour</a>
+    
         
         <div id="container">
             <!-- zone de connexion -->    
@@ -31,19 +34,12 @@
         </div>
     </body>
 
-    <style>
-     .button {
+  <style>
+     body{
   background-color: #1abc9c;
-  border: none;
-  color: white;
-  padding: 20px 34px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 20px;
-  margin: 4px 2px;
-  cursor: pointer;
+ 
+  
 }
 
-    </style>
+    </style> 
 </html>

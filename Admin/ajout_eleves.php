@@ -2,10 +2,25 @@
 <?php
   /*Insertion au niveau de la BD*/
   if($_POST)
-  {
+  { 
+    $prenom = $_POST['prenom'];
     $recup=$conn->exec("INSERT INTO eleves (prenom_eleves, nom_eleves,date_naissance_eleves,lieu_naissance_eleves,cycle_eleves,sexe, classe_eleves, date_inscription_eleves, montant_inscription_eleves)  
     VALUES('$_POST[prenom]','$_POST[nom]','$_POST[date_naissance_eleves]','$_POST[lieu_naissance_eleves]','$_POST[cycle_eleves]','$_POST[sexe]','$_POST[classe]','$_POST[date_inscrip]','$_POST[montant]')");
     echo  '<div style="background: green; padding: 5px;"> l\'eleve a bien été ajouté</div>' .'<br>'; 
+
+    $sql = "SELECT id_eleves FROM `eleves` WHERE  prenom_eleves = '$prenom' ";
+    $id = $conn->prepare($sql);
+    $id->execute();
+    $row = $id->fetch(PDO::FETCH_ASSOC);
+    //on modifie le matricule
+    $matricule = date('Y-', time()).$row['id_eleves'].'-EDR';
+    //on modifie la derniere matricule du BD
+    $sql2 = "UPDATE eleves  SET  matricule_eleves = '$matricule' WHERE prenom_eleves = '$prenom' ";
+    $matricule2 = $conn->prepare($sql2);
+    $matricule2->execute();
+    $message []  = "inscription reussi, votre matricule: ". $matricule;
+    $compte = true; 
+
   }
   /**Recuperation */
 /*   $recup=$conn->query("SELECT * FROM eleves");
@@ -52,9 +67,9 @@
 </head>
 <body>
 
-<<<<<<< HEAD
+
 </br>
-<a href="../Admin/principale.php" class="button">Retour en arrière</a>
+
 <style>
 .button {
   background-color: #1c87c9;
@@ -69,11 +84,10 @@
   cursor: pointer;
 }
 </style>
-=======
 <a class="btn btn-primary" href="../Admin/principale.php" role="button">Retour</a>
 
 
->>>>>>> main
+
 </br></br>
 <h1 align=center> Ajout d'un nouveau élève</h1>
 </br>
@@ -133,7 +147,7 @@
         <label for="matricule" class="form-label">Date d'inscription</label>
         <input type="date" class="form-control" id="date_inscrip" name="date_inscrip"  required>
     </div>
-    <div class="col-3">
+    <div class="col-md-3">
         <label for="montant" class="form-label">Montant</label>
         <input type="number" class="form-control" id="date_naissance" name="montant" required>
     </div>

@@ -64,8 +64,21 @@ else {
                 <input class="form-control" type="password" id="password" name='mdp' required>
             </div>
             <input class="btn" type="submit" value="S'identifier">
-            <?php
-       if (isset($message)) {
+
+
+        </form>
+    </div>
+  </div>
+</body>
+</html>
+
+
+
+
+
+
+<?php
+  if (isset($message)) {
        foreach ($message as $message) {
     
             echo '<div class="message_">'. $message . '</div>';
@@ -80,11 +93,5 @@ else {
   </div>
 </body>
 </html>
-
-
-
-
-
-
 
 

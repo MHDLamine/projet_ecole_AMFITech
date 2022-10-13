@@ -49,9 +49,6 @@
 </head>
 <body>
 
-</br>
-  <h1 align=center> Ajout d'un nouveau élève</h1>
-
 <a href="../Admin/principale.php" class="button">Retour en arrière</a>
 <style>
 .button {

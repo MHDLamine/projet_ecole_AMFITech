@@ -46,6 +46,7 @@
       echo '<td class="tdliste"> 
 
       <a href="supprimer.php? id='.$donnees["id_eleves"].'" onclick="return confirm("Êtes-vous sûr de vouloir supprimer")"><span class="material-symbols-outlined">
+      
       delete
       </span></a>
       </td>';

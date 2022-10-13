@@ -12,7 +12,7 @@
         <?php
   try  //Connection a la bdd
   {
-   $bdd = new PDO('mysql:host=localhost;dbname=Gestion_ecole;charset=utf8', 'root', '');
+   $bdd = new PDO('mysql:host=localhost;dbname=Gestion_ecole;charset=utf8', 'root', 'gahdamns');
   }
   catch (Exception $e)
   {
@@ -34,34 +34,33 @@
         echo '</tr>';
             while($donnees = $reponse->fetch()) // Renvoit les valeurs de la bdd
             {
-    echo '<tr>';
-      echo '<td class="tdliste">' . $donnees['id_eleves'] . '</td>';
-      echo '<td class="tdliste">' . $donnees['prenom_eleves'] . '</td>';
-      echo '<td class="tdliste">' . $donnees['nom_eleves'] . '</td>';
-      echo '<td class="tdliste">' . $donnees['date_naissance_eleves'] . '</td>';
-      echo '<td class="tdliste">' . $donnees['lieu_naissance_eleves'] . '</td>';
-      echo '<td class="tdliste">' . $donnees['cycle_eleves'] . '</td>';
-      echo '<td class="tdliste">' . $donnees['classe_eleves'] . '</td>';
-      echo '<td class="tdliste"> 
-
-      <a href="supprimer.php? id='.$donnees["id_eleves"].'" onclick="return confirm("Are you sure you want to delete this entry?")"><span class="material-symbols-outlined">
-      delete
-      </span></a>
-      </td>';
-      echo '<td class="tdliste"><a value="modifier" href="edite.php?id=<?= $person->id_eleves ?>" class="btn btn-info">Edit</a></td>';
-    echo '</tr>';
-            }
-  echo '</table></div></center>';
+                echo '<tr>';
+                echo '<td class="tdliste">' . $donnees['id_eleves'] . '</td>';
+                echo '<td class="tdliste">' . $donnees['prenom_eleves'] . '</td>';
+                echo '<td class="tdliste">' . $donnees['nom_eleves'] . '</td>';
+                echo '<td class="tdliste">' . $donnees['date_naissance_eleves'] . '</td>';
+                echo '<td class="tdliste">' . $donnees['lieu_naissance_eleves'] . '</td>';
+                echo '<td class="tdliste">' . $donnees['cycle_eleves'] . '</td>';
+                echo '<td class="tdliste">' . $donnees['classe_eleves'] . '</td>';
+                echo '<td class="tdliste"> 
+                <a href="supprimer.php? id='.$donnees["id_eleves"].'" onclick="confirmer()"><span class="material-symbols-outlined">
+                delete
+                </span></a>
+                </td>';
+                echo '<td class="tdliste"><a value="modifier" href="edite.php?id=<?= $person->id_eleves ?>" class="btn btn-info">Edit</a></td>';
+              echo '</tr>';
+             }
+            echo '</table></div></center>';
             $pdo = null;
         ?>
-    <p> 
-  <form action="index.php" method="post">
-   Numéro de fiche :<input type="text" name="id" id="id" size="1px" />
-  </form>
-  <div class="bouton">
-     <p>
-       <a href="principale.php" rel="nofollow noopener noreferrer" target="_blank">Retour</a>
-    </p>
-  </div>
+            <script>
+                function confirmer(){
+                var res = confirm("Êtes-vous sûr de vouloir supprimer l'élève?");
+                if(res){
+                    // Mettez ici la logique de suppression
+                }
+            }
+            </script>
+
     </body>
 </html>

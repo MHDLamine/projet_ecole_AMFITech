@@ -1,6 +1,4 @@
-
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -21,7 +19,7 @@
               } catch (Exception $e) {
                 die('Erreur : ' . $e->getMessage());
               }
-              $reponse = $bdd->query('SELECT * FROM eleves WHERE archive = 0');
+              $reponse = $bdd->query('SELECT * FROM eleves WHERE archive = 1');
               echo '<center><div class="liste"><table>';
               echo '<tr>';
               echo '<th class="thliste">Id</th>';
@@ -55,24 +53,23 @@
               echo '</table></div></center>';
               $pdo = null;
   ?>
-     <style> 
+  </div>
+  <style> 
      table,td,th{
       padding: 10px;
         border: 1px solid black;
-        border-collapse: collapse;      
+        border-collapse: collapse;
+              
      }
      body{
       background-color: rgb(214, 214, 214); 
       /* background-image:  url("../img/logo-lareussite.png "); */
+    
      }
      th{
-      background-color: blue;
+       background-color: red;
      }
     </style>
-
 <script src="js.js"></script>
 </body>
-
-    </body>
-
 </html>

@@ -1,0 +1,17 @@
+.edite{
+    width: 20px;
+}
+.sama
+{
+    width: 50%;
+    height:150px;
+    background-color: rgb(255, 0, 0);
+    margin: 20px;
+    font-size: 50px;
+    color: rgb(247, 246, 252);
+    writing-mode: vertical-rl;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid cyan;
+}

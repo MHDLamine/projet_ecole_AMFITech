@@ -85,4 +85,37 @@ else {
 
 
 
+<?php
+  if (isset($message)) {
+       foreach ($message as $message) {
+    
+            echo '<div class="message_">'. $message . '</div>';
+        }
+          
+       }
+    
+    ?>
+    <div class="box">
+       <div class="login">
+
+        <h1 class="text-center">Bonjour</h1>
+
+        <form method='post' action="" class="needs-validation">
+            <div class="form-group ">
+                <label class="form-label" for="email">Adresse mail</label>
+                <input class="form-control" type="text" id="email" name='email' required>
+            </div>
+            <div class="form-group ">
+                <label class="form-label" for="password">Mot de passe</label>
+                <input class="form-control" type="password" id="password" name='mdp' required>
+            </div>
+            <input class="btn" type="submit" value="S'identifier">
+
+
+        </form>
+    </div>
+  </div>
+</body>
+</html>
+
 

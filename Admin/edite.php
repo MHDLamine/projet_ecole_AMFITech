@@ -42,6 +42,7 @@ $liste_eleves = $statement->fetchAll(PDO::FETCH_OBJ);
         <input type="text" value="<?= $eleves->date_naissance_eleves; ?>" name="date_naissance_eleves[<?= $eleves->id_eleves; ?>]" />
         <input type="text" value="<?= $eleves->lieu_naissance_eleves; ?>" name="lieu_naissance_eleves[<?= $eleves->id_eleves; ?>]" />
       </li>
+      
     <?php } ?>
   </ul>
   <div><input type='submit' value='modifier' /></div><br>

@@ -32,7 +32,8 @@ $liste_eleves = $statement->fetchAll(PDO::FETCH_OBJ);
   <ul>
     <?php foreach ($liste_eleves as $eleves) { ?>
       <li>
-        <input type="hidden" value="<?= $eleves->id_eleves; ?>" name="id_eleves[]" />
+
+        <input type="text" value="<?= $eleves->id_eleves; ?>" name="id_eleves[]" />
         <input type="text" value="<?= $eleves->prenom_eleves; ?>" name="prenom_eleves[<?= $eleves->id_eleves; ?>]" />
         <input type="text" value="<?= $eleves->nom_eleves; ?>" name="nom_eleves[<?= $eleves->id_eleves; ?>]" />
       </li>

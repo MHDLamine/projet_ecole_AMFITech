@@ -64,31 +64,6 @@
                 }
             }
             </script>
-    echo '<tr>';
-      echo '<td class="tdliste">' . $donnees['id_eleves'] . '</td>';
-      echo '<td class="tdliste">' . $donnees['prenom_eleves'] . '</td>';
-      echo '<td class="tdliste">' . $donnees['nom_eleves'] . '</td>';
-      echo '<td class="tdliste">' . $donnees['date_naissance_eleves'] . '</td>';
-      echo '<td class="tdliste">' . $donnees['lieu_naissance_eleves'] . '</td>';
-      echo '<td class="tdliste">' . $donnees['cycle_eleves'] . '</td>';
-      echo '<td class="tdliste">' . $donnees['classe_eleves'] . '</td>';
-      echo '<td class="tdliste"> 
-
-
-      <a href="supprimer.php? id='.$donnees["id_eleves"].'" onclick="return confirm("Êtes-vous sûr de vouloir supprimer")"><span class="material-symbols-outlined">
-      
-
-      delete
-      </span></a>
-      </td>';
-      echo '<td class="tdliste"><a value="modifier" href="edite.php?id=<?= $person->id_eleves ?>" class="btn btn-info"><span class="material-symbols-outlined">
-      edit_square
-      </span></a></td>';
-    echo '</tr>';
-            }
-  echo '</table></div></center>';
-            $pdo = null;
-        ?>
      <style> 
      table,td,th{
       padding: 10px;

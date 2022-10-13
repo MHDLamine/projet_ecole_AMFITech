@@ -39,6 +39,9 @@ $message []  = "Ajouter un élève";
         <li style="margin-left: 10px;" class="nav-item">
            <a class="btn btn-primary" href="../Admin/liste.php" role="button">Voir la liste des élèves inscrit</a>
         </li>
+        <li style="margin-left: 10px;" class="nav-item">
+           <a class="btn btn-primary" href="../Admin/archive.php" role="button">Voir la liste des élèves archivés</a>
+        </li>
       </ul>
       <form class="d-flex" role="search">
          <a class="btn btn-primary" href="../Admin/deconnect.php" role="button">Déconnexion</a>

@@ -87,7 +87,7 @@ else {
 
 
 
-<<<<<<< HEAD
+
 <?php
   if (isset($message)) {
        foreach ($message as $message) {
@@ -120,6 +120,5 @@ else {
   </div>
 </body>
 </html>
-=======
->>>>>>> main
+
 

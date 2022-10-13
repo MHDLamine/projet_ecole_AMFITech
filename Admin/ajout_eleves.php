@@ -1,11 +1,23 @@
 <?php include '../connexion_php_databases.php';?>
 <?php
   /*Insertion au niveau de la BD*/
-  if($_POST)
+  if(isset($_POST['submit']))
   {
+    $prenom = $_POST['prenom'];
     $recup=$conn->exec("INSERT INTO eleves (prenom_eleves, nom_eleves,date_naissance_eleves,lieu_naissance_eleves,cycle_eleves,sexe, classe_eleves, date_inscription_eleves, montant_inscription_eleves)  
     VALUES('$_POST[prenom]','$_POST[nom]','$_POST[date_naissance_eleves]','$_POST[lieu_naissance_eleves]','$_POST[cycle_eleves]','$_POST[sexe]','$_POST[classe]','$_POST[date_inscrip]','$_POST[montant]')");
-    echo  '<div style="background: green; padding: 5px;"> l\'eleve a bien été ajouté</div>' .'<br>'; 
+    echo  '<div style="background: green; padding: 5px;"> l\'eleve a bien été ajouté</div>' .'<br>';
+    $sql = "SELECT id_eleves FROM `eleves` WHERE  id_eleves = '$prenom' ";
+    $id = $conn->prepare($sql);
+    $id->execute();
+    $row = $id->fetch(PDO::FETCH_ASSOC);
+    $matricule = date('Y-', time()).$row['id_eleves'].'-EDR';
+    //on modifie la derniere matricule du BD
+    $sql2 = "UPDATE eleves  SET  matricule_eleves = '$matricule' WHERE prenom_eleves = '$prenom' ";
+    $matricule2 = $conn->prepare($sql2);
+    $matricule2->execute();
+    $message []  = "inscription reussi, votre matricule: ". $matricule;
+    $compte = true;  
   }
   /**Recuperation */
 /*   $recup=$conn->query("SELECT * FROM eleves");

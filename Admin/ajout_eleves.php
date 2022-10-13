@@ -66,9 +66,22 @@
   <title>Ajour élève</title>
 </head>
 <body>
-
-
-
+</br>
+</br>
+<style>
+.button {
+  background-color: #1c87c9;
+  border: none;
+  color: white;
+  padding: 20px 34px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+</style>
 <a class="btn btn-primary" href="../Admin/principale.php" role="button">Retour</a>
 
 </br></br>
@@ -141,5 +154,10 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" 
 crossorigin="anonymous"></script>
 </div>
+<style>
+  h1{
+    color: white;
+  }
+  </style>
 </body>
 </html>

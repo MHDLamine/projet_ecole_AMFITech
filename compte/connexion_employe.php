@@ -71,7 +71,7 @@ else {
   </div>
 </body>
 </html>
-
+</html>
 
 
 <?php
@@ -90,5 +90,3 @@ else {
   </div>
 </body>
 </html>
-
-

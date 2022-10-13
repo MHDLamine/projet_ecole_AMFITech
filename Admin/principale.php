@@ -13,14 +13,14 @@ $message []  = "Ajouter un élève";
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     </head>
     <body>
-
+      
+        <div class="img"></div>
    
         <div class="img"></div>
    
        <!--  <div class="img" ></div>
         <img src="../img/logo-lareussite.png" alt="logo_page" width=90px>
         <a class="btn btn-primary" href="../site/index.php"  role="button">Accueil</a>
-
         <div id="content">
         <button><a href="../Admin/ajout_eleves.php" text-décoration="none">Ajouter un élève</a></button>
         <button><a href="../Admin/deconnect.php">Déconnecter</a></button> -->
@@ -59,8 +59,5 @@ $message []  = "Ajouter un élève";
                 }
             ?>
         </div>
-
-
-
     </body>
 </html>

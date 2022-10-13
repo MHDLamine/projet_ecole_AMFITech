@@ -17,7 +17,7 @@
   <?php
               try  //Connection a la bdd
               {
-                $bdd = new PDO('mysql:host=localhost;dbname=Gestion_ecole;charset=utf8', 'root', '');
+                $bdd = new PDO('mysql:host=localhost;dbname=Gestion_ecole;charset=utf8', 'root', 'gahdamns');
               } catch (Exception $e) {
                 die('Erreur : ' . $e->getMessage());
               }
@@ -55,6 +55,15 @@
               echo '</table></div></center>';
               $pdo = null;
   ?>
+
+            <script>
+                function confirmer(){
+                var res = confirm("Êtes-vous sûr de vouloir supprimer l'élève?");
+                if(res){
+                    // Mettez ici la logique de suppression
+                }
+            }
+            </script>
      <style> 
      table,td,th{
       padding: 10px;
@@ -69,10 +78,6 @@
       background-color: blue;
      }
     </style>
-
 <script src="js.js"></script>
 </body>
-
-    </body>
-
 </html>

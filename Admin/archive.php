@@ -1,6 +1,4 @@
-
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -17,11 +15,11 @@
   <?php
               try  //Connection a la bdd
               {
-                $bdd = new PDO('mysql:host=localhost;dbname=Gestion_ecole;charset=utf8', 'root', 'gahdamns');
+                $bdd = new PDO('mysql:host=localhost;dbname=Gestion_ecole;charset=utf8', 'root', '');
               } catch (Exception $e) {
                 die('Erreur : ' . $e->getMessage());
               }
-              $reponse = $bdd->query('SELECT * FROM eleves WHERE archive = 0');
+              $reponse = $bdd->query('SELECT * FROM eleves WHERE archive = 1');
               echo '<center><div class="liste"><table>';
               echo '<tr>';
               echo '<th class="thliste">Id</th>';
@@ -55,52 +53,21 @@
               echo '</table></div></center>';
               $pdo = null;
   ?>
-
-            <script>
-                function confirmer(){
-                var res = confirm("Êtes-vous sûr de vouloir supprimer l'élève?");
-                if(res){
-                    // Mettez ici la logique de suppression
-                }
-            }
-            </script>
-    echo '<tr>';
-      echo '<td class="tdliste">' . $donnees['id_eleves'] . '</td>';
-      echo '<td class="tdliste">' . $donnees['prenom_eleves'] . '</td>';
-      echo '<td class="tdliste">' . $donnees['nom_eleves'] . '</td>';
-      echo '<td class="tdliste">' . $donnees['date_naissance_eleves'] . '</td>';
-      echo '<td class="tdliste">' . $donnees['lieu_naissance_eleves'] . '</td>';
-      echo '<td class="tdliste">' . $donnees['cycle_eleves'] . '</td>';
-      echo '<td class="tdliste">' . $donnees['classe_eleves'] . '</td>';
-      echo '<td class="tdliste"> 
-
-
-      <a href="supprimer.php? id='.$donnees["id_eleves"].'" onclick="return confirm("Êtes-vous sûr de vouloir supprimer")"><span class="material-symbols-outlined">
-      
-
-      delete
-      </span></a>
-      </td>';
-      echo '<td class="tdliste"><a value="modifier" href="edite.php?id=<?= $person->id_eleves ?>" class="btn btn-info"><span class="material-symbols-outlined">
-      edit_square
-      </span></a></td>';
-    echo '</tr>';
-            }
-  echo '</table></div></center>';
-            $pdo = null;
-        ?>
-     <style> 
+  </div>
+  <style> 
      table,td,th{
       padding: 10px;
         border: 1px solid black;
-        border-collapse: collapse;      
+        border-collapse: collapse;
+              
      }
      body{
       background-color: rgb(214, 214, 214); 
       /* background-image:  url("../img/logo-lareussite.png "); */
+    
      }
      th{
-      background-color: blue;
+       background-color: red;
      }
     </style>
 <script src="js.js"></script>

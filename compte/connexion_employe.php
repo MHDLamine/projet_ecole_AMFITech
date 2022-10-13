@@ -41,9 +41,9 @@ else {
     <title>Document</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
        
-              <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="../style/i_employee.css">
    
 </head>
@@ -63,7 +63,7 @@ else {
                 <label class="form-label" for="password">Mot de passe</label>
                 <input class="form-control" type="password" id="password" name='mdp' required>
             </div>
-            <input class="btn" type="submit" value="S'identifier">
+            <input class="btn1" type="submit" value="S'identifier">
 
 
         </form>
@@ -71,9 +71,6 @@ else {
   </div>
 </body>
 </html>
-
-
-
 
 
 

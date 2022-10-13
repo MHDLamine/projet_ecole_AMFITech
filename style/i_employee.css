@@ -37,12 +37,15 @@
   font-size: 20px;
   margin-top: 15px;
 }
-.btn{
-  background-color: #1abc9c;
+.btn1{
+  background-color: #6b69bd;
   color: white;
-  margin-left: 25%;
+  margin-left: 30%;
+  border-radius: 5px;
+} 
+.btn1:hover {
+  background-color: rgb(19, 23, 133);
 }
-
 .message, .message_{
   width: auto;
   height: 30px;

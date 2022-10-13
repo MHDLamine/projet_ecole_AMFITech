@@ -54,14 +54,6 @@
   echo '</table></div></center>';
             $pdo = null;
         ?>
-    <p> 
-  <form action="index.php" method="post">
-   Numéro de fiche :<input type="text" name="id" id="id" size="1px" />
-  </form>
-  <div class="bouton">
-     <p>
-       <a href="principale.php" rel="nofollow noopener noreferrer" target="_blank">Retour</a>
-    </p>
-  </div>
+    
     </body>
 </html>

@@ -85,6 +85,12 @@ else {
 
 
 
+<<<<<<< HEAD
+=======
+
+
+
+>>>>>>> 9e7397c2082704d1686b2397f45723807c4125f3
 <?php
   if (isset($message)) {
        foreach ($message as $message) {

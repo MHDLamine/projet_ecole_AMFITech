@@ -6,11 +6,14 @@
 
         <!-- importer le fichier de style -->
         <link rel="stylesheet" href="style.css" media="screen" type="text/css" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
         
     </head>
     
     <body>
     <a class="btn btn-primary" href="../site/index.php" role="button">Retour</a>
+    
         
         <div id="container">
             <!-- zone de connexion -->    
@@ -31,4 +34,13 @@
             </form>
         </div>
     </body>
+
+  <style>
+     body{
+  background-color: #1abc9c;
+ 
+  
+}
+
+    </style> 
 </html>

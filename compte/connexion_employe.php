@@ -48,7 +48,7 @@ else {
    
 </head>
 <body>
-<a class="btn btn-primary" href="../site/index.php"" role="button">Accueil</a>
+<a class="btn btn-primary" href="../site/index.php" role="button">Accueil</a>
 
 <?php
   if (isset($message)) {

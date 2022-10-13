@@ -66,7 +66,6 @@
   <title>Ajour élève</title>
 </head>
 <body>
-<<<<<<< HEAD
 </br>
 </br>
 <style>
@@ -83,11 +82,6 @@
   cursor: pointer;
 }
 </style>
-=======
-
-
-
->>>>>>> main
 <a class="btn btn-primary" href="../Admin/principale.php" role="button">Retour</a>
 
 </br></br>

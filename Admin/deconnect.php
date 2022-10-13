@@ -1,3 +1,4 @@
+
 <?php
         if($_SESSION['adresse_mail_administrateur'] !== "")
         {
@@ -6,3 +7,4 @@
             session_destroy();
          }
 ?>  
+

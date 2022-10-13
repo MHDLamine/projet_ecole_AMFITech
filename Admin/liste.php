@@ -55,6 +55,23 @@
               $pdo = null;
   ?>
   </div>
+  <style> 
+     table,td,th{
+      padding: 10px;
+        border: 1px solid black;
+        border-collapse: collapse;
+              
+     }
+     body{
+      background-color: rgb(214, 214, 214); 
+      /* background-image:  url("../img/logo-lareussite.png "); */
+    
+      
+     }
+     th{
+      background-color: blue;
+     }
+    </style>
 <script src="js.js"></script>
 </body>
 </html>

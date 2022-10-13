@@ -12,7 +12,7 @@
         <?php
   try  //Connection a la bdd
   {
-   $bdd = new PDO('mysql:host=localhost;dbname=Gestion_ecole;charset=utf8', 'root', 'gahdamns');
+   $bdd = new PDO('mysql:host=localhost;dbname=Gestion_ecole;charset=utf8', 'root', '');
   }
   catch (Exception $e)
   {

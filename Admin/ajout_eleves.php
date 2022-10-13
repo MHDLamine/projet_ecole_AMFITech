@@ -114,7 +114,7 @@
         <label for="matricule" class="form-label">Date d'inscription</label>
         <input type="date" class="form-control" id="date_inscrip" name="date_inscrip"  required>
     </div>
-    <div class="col-3">
+    <div class="col-md-3">
         <label for="montant" class="form-label">Montant</label>
         <input type="number" class="form-control" id="date_naissance" name="montant" required>
     </div>

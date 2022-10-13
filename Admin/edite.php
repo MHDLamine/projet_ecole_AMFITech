@@ -31,6 +31,7 @@ $statement = $conn->prepare($sql);
 $statement->execute();
 $liste_eleves = $statement->fetchAll(PDO::FETCH_OBJ);
 ?>
+<!--***************************************affichage de l'élément à modifier*************************************-->
 <form action='' method='post' class="">
     <h1>Page pour la modification</h1>
   <ul>
